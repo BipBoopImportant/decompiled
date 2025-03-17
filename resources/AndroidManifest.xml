@@ -374,5 +374,11 @@
         <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
         <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
         <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+        <receiver android:name=".BarcodeReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.intent.action.SEND_BARCODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
