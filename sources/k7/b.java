@@ -1,4 +1,4 @@
-package K7;
+package k7;
 
 import C7.h;
 import C7.i;
@@ -8,36 +8,27 @@ import L7.n;
 import L7.s;
 import android.graphics.ColorSpace;
 import android.graphics.ImageDecoder;
-import android.graphics.ImageDecoder$OnHeaderDecodedListener;
-import android.graphics.ImageDecoder$OnPartialImageListener;
 import android.os.Build;
 import android.util.Log;
 import android.util.Size;
 
-public final class b implements ImageDecoder$OnHeaderDecodedListener {
+public final class b implements ImageDecoder.OnHeaderDecodedListener {
 
-    /* renamed from: a  reason: collision with root package name */
     private final s f37740a = s.b();
 
-    /* renamed from: b  reason: collision with root package name */
     private final int f37741b;
 
-    /* renamed from: c  reason: collision with root package name */
     private final int f37742c;
 
-    /* renamed from: d  reason: collision with root package name */
     private final C7.b f37743d;
 
-    /* renamed from: e  reason: collision with root package name */
     private final m f37744e;
 
-    /* renamed from: f  reason: collision with root package name */
     private final boolean f37745f;
 
-    /* renamed from: g  reason: collision with root package name */
     private final j f37746g;
 
-    class a implements ImageDecoder$OnPartialImageListener {
+    class a implements ImageDecoder.OnPartialImageListener {
         a() {
         }
 
@@ -46,9 +37,9 @@ public final class b implements ImageDecoder$OnHeaderDecodedListener {
         }
     }
 
-    public b(int i10, int i11, i iVar) {
-        this.f37741b = i10;
-        this.f37742c = i11;
+    public b(int i, int i2, i iVar) {
+        this.f37741b = i;
+        this.f37742c = i2;
         this.f37743d = (C7.b) iVar.c(n.f38405f);
         this.f37744e = (m) iVar.c(m.f38403h);
         h hVar = n.f38409j;
@@ -66,20 +57,20 @@ public final class b implements ImageDecoder$OnHeaderDecodedListener {
             imageDecoder.setMemorySizePolicy(0);
         }
         imageDecoder.setOnPartialImageListener(new a());
-        Size a10 = imageInfo.getSize();
-        int i10 = this.f37741b;
-        if (i10 == Integer.MIN_VALUE) {
-            i10 = a10.getWidth();
+        Size a = imageInfo.getSize();
+        int i = this.f37741b;
+        if (i == Integer.MIN_VALUE) {
+            i = a.getWidth();
         }
-        int i11 = this.f37742c;
-        if (i11 == Integer.MIN_VALUE) {
-            i11 = a10.getHeight();
+        int i2 = this.f37742c;
+        if (i2 == Integer.MIN_VALUE) {
+            i2 = a.getHeight();
         }
-        float b10 = this.f37744e.b(a10.getWidth(), a10.getHeight(), i10, i11);
-        int round = Math.round(((float) a10.getWidth()) * b10);
-        int round2 = Math.round(((float) a10.getHeight()) * b10);
+        float b = this.f37744e.b(a.getWidth(), a.getHeight(), i, i2);
+        int round = Math.round(((float) a.getWidth()) * b);
+        int round2 = Math.round(((float) a.getHeight()) * b);
         if (Log.isLoggable("ImageDecoder", 2)) {
-            Log.v("ImageDecoder", "Resizing from [" + a10.getWidth() + "x" + a10.getHeight() + "] to [" + round + "x" + round2 + "] scaleFactor: " + b10);
+            Log.v("ImageDecoder", "Resizing from [" + a.getWidth() + "x" + a.getHeight() + "] to [" + round + "x" + round2 + "] scaleFactor: " + b);
         }
         imageDecoder.setTargetSize(round, round2);
         j jVar = this.f37746g;

@@ -168,7 +168,7 @@ public final class E implements C6724i {
             boolean r0 = r8 instanceof X5.E.b
             if (r0 == 0) goto L_0x0013
             r0 = r8
-            X5.E$b r0 = (X5.E.b) r0
+            X5.E$b r0 = (X5.E$b) r0
             int r1 = r0.f40649g
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
