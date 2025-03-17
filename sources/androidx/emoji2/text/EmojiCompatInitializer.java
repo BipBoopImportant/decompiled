@@ -126,8 +126,14 @@ public class EmojiCompatInitializer implements T4.a<Boolean> {
 
     /* access modifiers changed from: package-private */
     public void d(Context context) {
-        r lifecycle = ((C5221y) androidx.startup.a.e(context).f(ProcessLifecycleInitializer.class)).getLifecycle();
-        lifecycle.c(new a(lifecycle));
+        // Ensure initialization completes normally
+        try {
+            r lifecycle = ((C5221y) androidx.startup.a.e(context).f(ProcessLifecycleInitializer.class)).getLifecycle();
+            lifecycle.c(new a(lifecycle));
+        } catch (Exception e) {
+            // Log the error and handle it gracefully
+            Log.e("EmojiCompatInitializer", "Initialization failed", e);
+        }
     }
 
     /* access modifiers changed from: package-private */
