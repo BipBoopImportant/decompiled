@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/toolbar_container" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <include layout="@layout/default_toolbar"/>
+    </FrameLayout>
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/InputLayoutTheme" android:id="@+id/postal_code_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/checkout_postal_code_picker_hint" android:layout_marginStart="@dimen/default_spacing_large" android:layout_marginEnd="@dimen/default_spacing_large" app:errorEnabled="true" app:hintAnimationEnabled="true" app:hintEnabled="true" app:layout_constraintTop_toBottomOf="@+id/toolbar_container">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/postal_code_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="8dp" android:inputType="textPostalAddress" android:imeOptions="actionSearch" android:drawableEnd="@drawable/ic_skapa_magnifying_glass"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/postal_code_input_layout"/>
+    <com.ingka.ikea.app.uicomponents.view.progress.HorizontalProgressView android:id="@+id/progressBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" style="@style/HorizontalProgressBar.Blue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

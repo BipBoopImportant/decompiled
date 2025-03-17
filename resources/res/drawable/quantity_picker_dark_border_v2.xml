@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="?attr/colorControlHighlight">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/error"/>
+            <corners android:radius="@dimen/quantity_picker_radius"/>
+            <padding android:left="@dimen/quantity_picker_padding_horizontal" android:top="@dimen/quantity_picker_padding_vertical" android:right="@dimen/quantity_picker_padding_horizontal" android:bottom="@dimen/quantity_picker_padding_vertical"/>
+        </shape>
+    </item>
+</ripple>

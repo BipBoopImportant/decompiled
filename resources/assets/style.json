@@ -1,0 +1,1116 @@
+{
+  "version": 8,
+  "name": "Kompass Map Style",
+  "metadata": {},
+  "glyphs": "https://metro.ikea.net/resources/fonts/{fontstack}/{range}.pbf",
+  "light": {
+    "anchor": "map",
+    "color": "#f5f5f5",
+    "intensity": 0.1
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#9B9D9E"
+      }
+    },
+    {
+      "source": "kompass-streets",
+      "id": "background-streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ABABAB",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          10,
+          ["*", 1.6, ["^", 2, -6]],
+          24,
+          ["*", 1.6, ["^", 2, 8]]
+        ]
+      }
+    },
+    {
+      "source": "kompass-buildings",
+      "id": "background-buildings",
+      "type": "fill-extrusion",
+      "paint": {
+        "fill-extrusion-height": [
+          "case",
+          ["==", ["get", "brand"], "IKEA"],
+          0,
+          1
+        ],
+        "fill-extrusion-color": "#A3A3A3",
+        "fill-extrusion-vertical-gradient": true
+      },
+      "filter": ["!=", ["get", "brand"], "IKEA"]
+    },
+    {
+      "source": "kompass",
+      "id": "shadow-floor-outline",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#DCE1E3",
+        "fill-outline-color": "#B5C0CC",
+        "fill-opacity": 0.4
+      },
+      "filter": ["==", "layer", "shadow-floor-outline"]
+    },
+    {
+      "source": "kompass",
+      "id": "floor-outline",
+      "type": "fill",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#F7F7F7"
+      },
+      "filter": ["==", "layer", "floor-outline"]
+    },
+    {
+      "source": "kompass",
+      "id": "open-to-below",
+      "minzoom": 15,
+      "type": "fill",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#DCE1E3",
+        "fill-opacity": 0.6
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "internal-structure"],
+        ["==", "type", "open-to-below"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "open-to-below_border",
+      "type": "line",
+      "paint": {
+        "line-color": "#DCE1E3",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          10,
+          1,
+          24,
+          15
+        ]
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "internal-structure"],
+        ["==", "type", "open-to-below"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "connectors_border",
+      "type": "line",
+      "paint": {
+        "line-color": "#DCE1E3",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          10,
+          1,
+          24,
+          15
+        ]
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "connectors"],
+        ["==", "shaftDirection", "down"],
+        ["!=", "subtype", "POI_SUBTYPE_LIFT"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "connectors",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#FCF7E3",
+        "fill-outline-color": "#CCD6E1"
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "connectors"],
+        ["==", "shaftDirection", "down"],
+        ["!=", "subtype", "POI_SUBTYPE_LIFT"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "connectors_selected",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#B4CDEA"
+      },
+      "filter": [
+        "all",
+        [
+          "any",
+          ["==", "layer", "connectors_selected-connectors"],
+          ["==", "layer", "connectors_selected"]
+        ],
+        ["==", "shaftDirection", "down"],
+        ["!=", "subtype", "POI_SUBTYPE_LIFT"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "connectors_upwards",
+      "type": "fill-extrusion",
+      "paint": {
+        "fill-extrusion-color": "#FCF7E3",
+        "fill-extrusion-height": 0.8,
+        "fill-extrusion-opacity": 1
+      },
+      "filter": [
+        "any",
+        ["all", ["==", "layer", "connectors"], ["==", "shaftDirection", "up"]],
+        ["==", "subtype", "POI_SUBTYPE_LIFT"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "connectors_upwards_selected",
+      "type": "fill-extrusion",
+      "paint": {
+        "fill-extrusion-color": "#B4CDEA",
+        "fill-extrusion-height": 0.8,
+        "fill-extrusion-opacity": 1
+      },
+      "filter": [
+        "any",
+        [
+          "all",
+          ["==", "layer", "connectors_selected"],
+          ["==", "shaftDirection", "up"]
+        ],
+        [
+          "all",
+          ["==", "layer", "connectors_selected"],
+          ["==", "subtype", "POI_SUBTYPE_LIFT"]
+        ],
+        ["==", "layer", "connectors_selected-connectors"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "departments_selected",
+      "type": "fill",
+      "paint": {
+        "fill-opacity": [
+          "case",
+          ["==", ["get", "id"], "POI_SUBTYPE_CIRCULAR_HUB"],
+          0.5,
+          0.8
+        ],
+        "fill-color": "#A5E3FF"
+      },
+      "filter": [
+        "any",
+        ["all", ["==", "layer", "departments_selected"]],
+        [
+          "all",
+          ["==", "layer", "points-of-interest_selected"],
+          ["==", "$type", "Polygon"]
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "divisions_selected",
+      "type": "fill",
+      "paint": {
+        "fill-opacity": 0.8,
+        "fill-color": "#A5E3FF"
+      },
+      "filter": [
+        "any",
+        ["==", "layer", "divisions_selected"],
+        [
+          "all",
+          ["==", "layer", "departments_selected"],
+          ["==", "id", "DIV_SELF_SERVE"]
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "walking-path_border",
+      "type": "line",
+      "minzoom": 17,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#A5E3FF",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          10,
+          ["*", 1.9, ["^", 2, -6]],
+          24,
+          ["*", 1.9, ["^", 2, 8]]
+        ]
+      },
+      "filter": ["==", "layer", "walking-path"]
+    },
+    {
+      "source": "kompass",
+      "id": "walking-path",
+      "type": "line",
+      "minzoom": 17,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": [
+          "interpolate",
+          ["exponential", 2],
+          ["zoom"],
+          10,
+          ["*", 1.6, ["^", 2, -6]],
+          24,
+          ["*", 1.6, ["^", 2, 8]]
+        ]
+      },
+      "filter": ["==", "layer", "walking-path"]
+    },
+    {
+      "source": "kompass",
+      "id": "arrows",
+      "type": "fill",
+      "paint": {
+        "fill-opacity": 1,
+        "fill-color": "#A5E3FF"
+      },
+      "filter": ["==", "layer", "arrows"]
+    },
+    {
+      "source": "kompass",
+      "id": "internal-walls",
+      "type": "fill-extrusion",
+      "minzoom": 15,
+      "paint": {
+        "fill-extrusion-height": 1,
+        "fill-extrusion-color": "#DCE1E3",
+        "fill-extrusion-vertical-gradient": true
+      },
+      "filter": ["==", "layer", "internal-walls"]
+    },
+    {
+      "source": "kompass",
+      "id": "internal-structure",
+      "type": "fill-extrusion",
+      "minzoom": 15,
+      "paint": {
+        "fill-extrusion-height": 1,
+        "fill-extrusion-color": "#DCE1E3",
+        "fill-extrusion-vertical-gradient": true
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "internal-structure"],
+        ["==", "type", "room"]
+      ]
+    },
+
+    {
+      "source": "kompass",
+      "id": "shelves",
+      "minzoom": 15,
+      "type": "fill-extrusion",
+      "paint": {
+        "fill-extrusion-color": [
+          "case",
+          ["==", ["get", "type"], "wall-mounted"],
+          "#F2F2F2",
+          ["==", ["get", "type"], "racks"],
+          "#F2F2F2",
+          ["==", ["get", "type"], "self-serve"],
+          "#F1F9FE",
+          ["==", ["get", "type"], "self-serve-racks"],
+          "#F1F9FE",
+          ["==", ["get", "type"], "cashline"],
+          "#FBF1E4",
+          ["==", ["get", "type"], "activity-area"],
+          "#F2F2F2",
+          ["==", ["get", "type"], "desk"],
+          "#BCBCBC",
+          ["==", ["get", "type"], "circular-hub"],
+          "#D9D9D9",
+          ["==", ["get", "type"], "bistro"],
+          "#D9D9D9",
+          ["==", ["get", "type"], "restaurant"],
+          "#D9D9D9",
+          "#F2F2F2"
+        ],
+        "fill-extrusion-height": [
+          "case",
+          ["==", ["get", "type"], "wall-mounted"],
+          0.8,
+          ["==", ["get", "type"], "racks"],
+          0.4,
+          ["==", ["get", "type"], "self-serve"],
+          1.8,
+          ["==", ["get", "type"], "self-serve-racks"],
+          0.8,
+          ["==", ["get", "type"], "cashline"],
+          0.6,
+          ["==", ["get", "type"], "activity-area"],
+          0.5,
+          ["==", ["get", "type"], "desk"],
+          0.5,
+          ["==", ["get", "type"], "circular-hub"],
+          0.5,
+          ["==", ["get", "type"], "bistro"],
+          0.4,
+          ["==", ["get", "type"], "restaurant"],
+          0.4,
+          1
+        ]
+      },
+      "filter": ["==", "layer", "shelves"]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest_semi-important",
+      "minzoom": 18,
+      "type": "symbol",
+      "layout": {
+        "icon-image": ["get", "subtype"],
+        "icon-size": ["interpolate", ["linear"], ["zoom"], 19, 0.85, 23, 0.7],
+        "text-field": ["coalesce", ["get", "name"], ["get", "subtype"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "icon-anchor": "bottom",
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "points-of-interest"],
+        [
+          "in",
+          "subtype",
+          "POI_SUBTYPE_BISTRO",
+          "POI_SUBTYPE_RESTAURANT_AND_CAFE",
+          "POI_SUBTYPE_CAFE",
+          "POI_SUBTYPE_IKEA_FOR_BUSINESS",
+          "POI_SUBTYPE_MARKETHALL_ENTRANCE",
+          "POI_SUBTYPE_SHOWROOM_ENTRANCE",
+          "POI_SUBTYPE_ACTIVITY_AREA_1",
+          "POI_SUBTYPE_ACTIVITY_AREA_2",
+          "POI_SUBTYPE_ACTIVITY_AREA_3",
+          "POI_SUBTYPE_ACTIVITY_AREA_4",
+          "POI_SUBTYPE_ACTIVITY_AREA_5",
+          "POI_SUBTYPE_ACTIVITY_AREA_6",
+          "POI_SUBTYPE_ACTIVITY_AREA_7"
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest",
+      "minzoom": 19,
+      "type": "symbol",
+      "layout": {
+        "icon-image": ["get", "subtype"],
+        "icon-size": 0.7,
+        "text-field": ["coalesce", ["get", "name"], ["get", "subtype"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "text-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 1
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "points-of-interest"],
+        ["!=", "subtype", "POI_SUBTYPE_KIOSK_OR_DISPLAY"],
+        [
+          "!in",
+          "subtype",
+          "POI_SUBTYPE_EXIT",
+          "POI_SUBTYPE_ENTRANCE",
+          "POI_SUBTYPE_ENTRANCE_EXIT",
+          "POI_SUBTYPE_CHECK_OUT",
+          "POI_SUBTYPE_RESTROOM"
+        ],
+        [
+          "!in",
+          "subtype",
+          "POI_SUBTYPE_BISTRO",
+          "POI_SUBTYPE_RESTAURANT_AND_CAFE",
+          "POI_SUBTYPE_CAFE",
+          "POI_SUBTYPE_IKEA_FOR_BUSINESS",
+          "POI_SUBTYPE_MARKETHALL_ENTRANCE",
+          "POI_SUBTYPE_SHOWROOM_ENTRANCE",
+          "POI_SUBTYPE_ACTIVITY_AREA_1",
+          "POI_SUBTYPE_ACTIVITY_AREA_2",
+          "POI_SUBTYPE_ACTIVITY_AREA_3",
+          "POI_SUBTYPE_ACTIVITY_AREA_4",
+          "POI_SUBTYPE_ACTIVITY_AREA_5",
+          "POI_SUBTYPE_ACTIVITY_AREA_6",
+          "POI_SUBTYPE_ACTIVITY_AREA_7"
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest_kiosk",
+      "minzoom": 20,
+      "type": "symbol",
+      "layout": {
+        "icon-image": ["get", "subtype"],
+        "icon-size": 0.7,
+        "text-field": ["coalesce", ["get", "name"], ["get", "subtype"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "text-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "points-of-interest"],
+        ["==", "subtype", "POI_SUBTYPE_KIOSK_OR_DISPLAY"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "connectors_point",
+      "type": "symbol",
+      "minzoom": 19,
+      "layout": {
+        "icon-image": [
+          "case",
+          [
+            "all",
+            ["==", ["get", "subtype"], "POI_SUBTYPE_LIFT"],
+            ["==", ["get", "direction"], "up"]
+          ],
+          "POI_SUBTYPE_LIFT_UP",
+          [
+            "all",
+            ["==", ["get", "subtype"], "POI_SUBTYPE_LIFT"],
+            ["==", ["get", "direction"], "down"]
+          ],
+          "POI_SUBTYPE_LIFT_DOWN",
+          [
+            "all",
+            ["==", ["get", "subtype"], "POI_SUBTYPE_ESCALATOR"],
+            ["==", ["get", "direction"], "up"]
+          ],
+          "POI_SUBTYPE_ESCALATOR_UP",
+          [
+            "all",
+            ["==", ["get", "subtype"], "POI_SUBTYPE_ESCALATOR"],
+            ["==", ["get", "direction"], "down"]
+          ],
+          "POI_SUBTYPE_LIFT_DOWN",
+          ["get", "subtype"]
+        ],
+        "icon-size": 0.7,
+        "icon-anchor": "bottom",
+        "text-field": " ",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-anchor": "top"
+      },
+      "filter": ["==", "layer", "connectors"]
+    },
+    {
+      "source": "kompass",
+      "id": "connectors_point_selected",
+      "type": "symbol",
+      "layout": {
+        "icon-image": [
+          "concat",
+          [
+            "case",
+            [
+              "all",
+              ["==", ["get", "subtype"], "POI_SUBTYPE_LIFT"],
+              ["==", ["get", "direction"], "up"]
+            ],
+            "POI_SUBTYPE_LIFT_UP",
+            [
+              "all",
+              ["==", ["get", "subtype"], "POI_SUBTYPE_LIFT"],
+              ["==", ["get", "direction"], "down"]
+            ],
+            "POI_SUBTYPE_LIFT_DOWN",
+            [
+              "all",
+              ["==", ["get", "subtype"], "POI_SUBTYPE_ESCALATOR"],
+              ["==", ["get", "direction"], "up"]
+            ],
+            "POI_SUBTYPE_ESCALATOR_UP",
+            [
+              "all",
+              ["==", ["get", "subtype"], "POI_SUBTYPE_ESCALATOR"],
+              ["==", ["get", "direction"], "down"]
+            ],
+            "POI_SUBTYPE_LIFT_DOWN",
+            ["get", "subtype"]
+          ],
+          "_selected"
+        ],
+        "icon-size": 1,
+        "icon-anchor": "bottom",
+        "text-field": " ",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-anchor": "top"
+      },
+      "filter": [
+        "any",
+        ["==", "layer", "connectors_selected-connectors"],
+        ["==", "layer", "connectors_selected"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "departments_point",
+      "type": "symbol",
+      "minzoom": 18,
+      "layout": {
+        "icon-image": ["coalesce", ["get", "id"], "UNKNOWN_DEPARTMENT"],
+        "icon-size": 1,
+        "text-field": ["coalesce", ["get", "name"], ["get", "id"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "icon-optional": true,
+        "icon-anchor": "bottom",
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#484848",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "departments"],
+        [
+          "!in",
+          "id",
+          "POI_SUBTYPE_CIRCULAR_HUB",
+          "POI_SUBTYPE_CUSTOMER_SERVICE"
+        ],
+        ["!=", "id", "POI_SUBTYPE_RESTAURANT_AND_CAFE"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "departments-point_selected",
+      "type": "symbol",
+      "layout": {
+        "icon-image": [
+          "coalesce",
+          ["concat", ["get", "id"], "_selected"],
+          "UNKNOWN_DEPARTMENT_selected"
+        ],
+        "icon-size": 1,
+        "text-field": ["coalesce", ["get", "name"], ["get", "id"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "icon-optional": true,
+        "icon-anchor": "bottom",
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#484848",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "departments_selected"],
+        [
+          "!in",
+          "id",
+          "POI_SUBTYPE_CIRCULAR_HUB",
+          "POI_SUBTYPE_CUSTOMER_SERVICE"
+        ],
+        ["!=", "id", "POI_SUBTYPE_RESTAURANT_AND_CAFE"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "divisions_point",
+      "type": "symbol",
+      "minzoom": 15,
+      "maxzoom": 18,
+      "layout": {
+        "icon-image": ["coalesce", ["get", "id"], "UNKNOWN_DIVISION"],
+        "icon-size": 1,
+        "icon-optional": true,
+        "icon-anchor": "bottom",
+        "text-field": ["coalesce", ["get", "name"], ["get", "id"]],
+        "text-size": 13,
+        "text-font": ["Noto Sans Bold"],
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "any",
+        ["==", "layer", "divisions"],
+        ["all", ["==", "layer", "departments"], ["==", "id", "DIV_SELF_SERVE"]]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "divisions_point_selected",
+      "type": "symbol",
+      "layout": {
+        "icon-image": [
+          "coalesce",
+          ["concat", ["get", "id"], "_selected"],
+          "UNKNOWN_DIVISION_selected"
+        ],
+        "icon-size": 1,
+        "icon-optional": true,
+        "icon-anchor": "bottom",
+        "text-field": [
+          "coalesce",
+          ["get", "name"],
+          "UNKNOWN_DIVISION_selected"
+        ],
+        "text-size": 13,
+        "text-font": ["Noto Sans Bold"],
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "any",
+        ["==", "layer", "divisions_selected"],
+        [
+          "all",
+          ["==", "layer", "departments_selected"],
+          ["==", "id", "DIV_SELF_SERVE"]
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest_important",
+      "minzoom": 15,
+      "type": "symbol",
+      "layout": {
+        "icon-image": ["coalesce", ["get", "subtype"], ["get", "id"]],
+        "icon-size": [
+          "case",
+          ["!=", ["get", "id"], "POI_SUBTYPE_CUSTOMER_SERVICE"],
+          1,
+          0.85
+        ],
+        "icon-optional": true,
+        "icon-anchor": "bottom",
+        "text-field": ["coalesce", ["get", "name"], ["get", "subtype"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-optional": true,
+        "text-anchor": "top"
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "any",
+        [
+          "all",
+          ["in", "layer", "points-of-interest"],
+          [
+            "in",
+            "subtype",
+            "POI_SUBTYPE_EXIT",
+            "POI_SUBTYPE_ENTRANCE",
+            "POI_SUBTYPE_ENTRANCE_EXIT",
+            "POI_SUBTYPE_CHECK_OUT",
+            "POI_SUBTYPE_RESTROOM"
+          ]
+        ],
+        [
+          "all",
+          ["in", "layer", "departments"],
+          [
+            "in",
+            "id",
+            "POI_SUBTYPE_CIRCULAR_HUB",
+            "POI_SUBTYPE_CUSTOMER_SERVICE"
+          ]
+        ],
+        [
+          "all",
+          ["in", "layer", "departments"],
+          ["==", "id", "POI_SUBTYPE_RESTAURANT_AND_CAFE"]
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest_semi-important_selected",
+      "type": "symbol",
+      "layout": {
+        "icon-image": ["concat", ["get", "subtype"], "_selected"],
+        "icon-size": 1,
+        "text-field": ["coalesce", ["get", "name"], ["get", "subtype"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "icon-anchor": "bottom",
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "points-of-interest_selected"],
+        [
+          "in",
+          "subtype",
+          "POI_SUBTYPE_BISTRO",
+          "POI_SUBTYPE_RESTAURANT_AND_CAFE",
+          "POI_SUBTYPE_CAFE",
+          "POI_SUBTYPE_IKEA_FOR_BUSINESS",
+          "POI_SUBTYPE_MARKETHALL_ENTRANCE",
+          "POI_SUBTYPE_SHOWROOM_ENTRANCE",
+          "POI_SUBTYPE_ACTIVITY_AREA_1",
+          "POI_SUBTYPE_ACTIVITY_AREA_2",
+          "POI_SUBTYPE_ACTIVITY_AREA_3",
+          "POI_SUBTYPE_ACTIVITY_AREA_4",
+          "POI_SUBTYPE_ACTIVITY_AREA_5",
+          "POI_SUBTYPE_ACTIVITY_AREA_6",
+          "POI_SUBTYPE_ACTIVITY_AREA_7"
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest_kiosk_selected",
+      "type": "symbol",
+      "layout": {
+        "icon-image": ["concat", ["get", "subtype"], "_selected"],
+        "icon-size": 1,
+        "text-field": ["coalesce", ["get", "name"], ["get", "subtype"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "text-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "points-of-interest_selected"],
+        ["==", "subtype", "POI_SUBTYPE_KIOSK_OR_DISPLAY"]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest_selected",
+      "type": "symbol",
+      "layout": {
+        "icon-image": ["concat", ["get", "subtype"], "_selected"],
+        "icon-anchor": "bottom",
+        "icon-size": 1,
+        "text-field": ["coalesce", ["get", "name"], ["get", "subtype"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-anchor": "top",
+        "text-optional": true,
+        "icon-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "all",
+        ["==", "layer", "points-of-interest_selected"],
+        ["!=", "subtype", "POI_SUBTYPE_KIOSK_OR_DISPLAY"],
+        [
+          "!in",
+          "subtype",
+          "POI_SUBTYPE_EXIT",
+          "POI_SUBTYPE_ENTRANCE",
+          "POI_SUBTYPE_ENTRANCE_EXIT",
+          "POI_SUBTYPE_CHECK_OUT",
+          "POI_SUBTYPE_RESTROOM"
+        ],
+        [
+          "!in",
+          "subtype",
+          "POI_SUBTYPE_BISTRO",
+          "POI_SUBTYPE_RESTAURANT_AND_CAFE",
+          "POI_SUBTYPE_CAFE",
+          "POI_SUBTYPE_IKEA_FOR_BUSINESS",
+          "POI_SUBTYPE_MARKETHALL_ENTRANCE",
+          "POI_SUBTYPE_SHOWROOM_ENTRANCE",
+          "POI_SUBTYPE_ACTIVITY_AREA_1",
+          "POI_SUBTYPE_ACTIVITY_AREA_2",
+          "POI_SUBTYPE_ACTIVITY_AREA_3",
+          "POI_SUBTYPE_ACTIVITY_AREA_4",
+          "POI_SUBTYPE_ACTIVITY_AREA_5",
+          "POI_SUBTYPE_ACTIVITY_AREA_6",
+          "POI_SUBTYPE_ACTIVITY_AREA_7"
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest_important_selected",
+      "type": "symbol",
+      "layout": {
+        "icon-image": [
+          "concat",
+          ["coalesce", ["get", "subtype"], ["get", "id"]],
+          "_selected"
+        ],
+        "icon-size": 1,
+        "icon-optional": true,
+        "icon-anchor": "bottom",
+        "text-field": ["coalesce", ["get", "name"], ["get", "subtype"]],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-optional": true,
+        "text-anchor": "top"
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 2
+      },
+      "filter": [
+        "any",
+        [
+          "all",
+          ["in", "layer", "points-of-interest_selected"],
+          [
+            "in",
+            "subtype",
+            "POI_SUBTYPE_EXIT",
+            "POI_SUBTYPE_ENTRANCE",
+            "POI_SUBTYPE_ENTRANCE_EXIT",
+            "POI_SUBTYPE_CHECK_OUT",
+            "POI_SUBTYPE_RESTROOM"
+          ]
+        ],
+        [
+          "all",
+          ["in", "layer", "departments_selected"],
+          [
+            "in",
+            "id",
+            "POI_SUBTYPE_CIRCULAR_HUB",
+            "POI_SUBTYPE_CUSTOMER_SERVICE"
+          ]
+        ],
+        [
+          "all",
+          ["in", "layer", "departments_selected"],
+          ["==", "id", "POI_SUBTYPE_RESTAURANT_AND_CAFE"]
+        ]
+      ]
+    },
+    {
+      "source": "kompass",
+      "id": "points-of-interest_selected-connectors",
+      "type": "symbol",
+      "layout": {
+        "icon-image": ["concat", ["get", "subtype"], "_selected-connectors"],
+        "icon-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          0.5,
+          23,
+          1
+        ],
+        "icon-anchor": "center",
+        "text-field": ["get", "name"],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["exponential", 1.2],
+          ["zoom"],
+          18,
+          10,
+          23,
+          20
+        ],
+        "text-transform": "none",
+        "text-letter-spacing": 0.05,
+        "text-offset": [0, 1.5],
+        "text-line-height": 1.35,
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-halo-color": "#FFFFFF",
+        "text-color": "#484848",
+        "text-halo-width": 1,
+        "icon-color": "#0061B4"
+      },
+      "filter": ["==", "layer", "points-of-interest_selected-connectors"]
+    }
+  ]
+}

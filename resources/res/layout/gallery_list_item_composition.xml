@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/cardViewCompositionBase" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="marquee" android:id="@+id/compositionName" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sc_long_title" android:maxLines="1" android:layout_weight="1" android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/showMoreButton" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextAppearance.Sugarcube.CardView.GalleryItemTitle"/>
+        <ImageButton android:id="@+id/showMoreButton" android:src="@drawable/sc_ic_more" android:contentDescription="@string/sc_content_description_button" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Sugarcube.Button.IconOnly.Dark"/>
+        <TextView android:id="@+id/compositionItemsCount" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/compositionName" style="@style/TextAppearance.Sugarcube.CardView.Header"/>
+        <androidx.cardview.widget.CardView android:id="@+id/imageCompositionCardView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" app:cardCornerRadius="8dp" app:cardElevation="0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/compositionItemsCount">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/imageComposition" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="0dp" android:scaleType="centerCrop" android:contentDescription="@string/sc_content_description_image" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="W,16:9" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:layout_width="0dp" android:layout_height="10dp"/>
+    <include android:id="@+id/cardDetailFurnitureBoxedView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/gallery_list_item_composition_furniture_boxed_view"/>
+    <TextView android:textColor="@color/skapa_semantic_information" android:id="@+id/designViewOnlyText" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sc_gallery_design_view_only"/>
+</LinearLayout>

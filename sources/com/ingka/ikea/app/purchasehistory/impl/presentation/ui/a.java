@@ -1,0 +1,71 @@
+package com.ingka.ikea.app.purchasehistory.impl.presentation.ui;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import kotlin.Metadata;
+import kotlin.jvm.internal.C17542s;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+@Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\b7\u0018\u00002\u00020\u0001:\u0001\u0004B\t\b\u0004¢\u0006\u0004\b\u0002\u0010\u0003\u0001\u0001\u0005¨\u0006\u0006"}, d2 = {"Lcom/ingka/ikea/app/purchasehistory/impl/presentation/ui/a;", "Landroid/os/Parcelable;", "<init>", "()V", "a", "Lcom/ingka/ikea/app/purchasehistory/impl/presentation/ui/a$a;", "purchasehistory-implementation_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+public abstract class a implements Parcelable {
+
+    @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\bÇ\n\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\t\u0010\nJ\r\u0010\u000b\u001a\u00020\u0006¢\u0006\u0004\b\u000b\u0010\fJ\u0010\u0010\u000e\u001a\u00020\rHÖ\u0001¢\u0006\u0004\b\u000e\u0010\u000fJ\u0010\u0010\u0010\u001a\u00020\u0006HÖ\u0001¢\u0006\u0004\b\u0010\u0010\fJ\u001a\u0010\u0014\u001a\u00020\u00132\b\u0010\u0012\u001a\u0004\u0018\u00010\u0011HÖ\u0003¢\u0006\u0004\b\u0014\u0010\u0015¨\u0006\u0016"}, d2 = {"Lcom/ingka/ikea/app/purchasehistory/impl/presentation/ui/a$a;", "Lcom/ingka/ikea/app/purchasehistory/impl/presentation/ui/a;", "<init>", "()V", "Landroid/os/Parcel;", "dest", "", "flags", "LXH/N;", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "", "toString", "()Ljava/lang/String;", "hashCode", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "purchasehistory-implementation_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+    /* renamed from: com.ingka.ikea.app.purchasehistory.impl.presentation.ui.a$a  reason: collision with other inner class name */
+    public static final class C1984a extends a {
+        public static final Parcelable.Creator<C1984a> CREATOR = new C1985a();
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final C1984a f90927a = new C1984a();
+
+        /* renamed from: b  reason: collision with root package name */
+        public static final int f90928b = 8;
+
+        @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
+        /* renamed from: com.ingka.ikea.app.purchasehistory.impl.presentation.ui.a$a$a  reason: collision with other inner class name */
+        public static final class C1985a implements Parcelable.Creator<C1984a> {
+            /* renamed from: a */
+            public final C1984a createFromParcel(Parcel parcel) {
+                C17542s.j(parcel, "parcel");
+                parcel.readInt();
+                return C1984a.f90927a;
+            }
+
+            /* renamed from: b */
+            public final C1984a[] newArray(int i10) {
+                return new C1984a[i10];
+            }
+        }
+
+        private C1984a() {
+            super((DefaultConstructorMarker) null);
+        }
+
+        public final int describeContents() {
+            return 0;
+        }
+
+        public boolean equals(Object obj) {
+            return this == obj || (obj instanceof C1984a);
+        }
+
+        public int hashCode() {
+            return 1413484133;
+        }
+
+        public String toString() {
+            return "OrderCancelled";
+        }
+
+        public final void writeToParcel(Parcel parcel, int i10) {
+            C17542s.j(parcel, "dest");
+            parcel.writeInt(1);
+        }
+    }
+
+    public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private a() {
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="40dp" android:width="40dp" android:viewportWidth="40" android:viewportHeight="40">
+    <group>
+        <clip-path android:pathData="M0,0h40v40h-40z"/>
+        <path android:fillColor="#dfdfdf" android:pathData="M0,0h40v40h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,39.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,34.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,29.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,24.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,19.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,14.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,9.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,4.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M0,-0.5h40v1h-40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M39.5,40l0,-40l1,-0l0,40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M34.5,40l0,-40l1,-0l0,40z" android:strokeAlpha="0.75" android:fillAlpha="0.75"/>
+        <path android:fillColor="#eeeeee" android:pathData="M29.5,40l0,-40l1,-0l0,40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M24.5,40l0,-40l1,-0l0,40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M19.5,40l0,-40l1,-0l0,40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M14.5,40l0,-40l1,-0l0,40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M9.5,40l0,-40l1,-0l0,40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M4.5,40l0,-40l1,-0l0,40z"/>
+        <path android:fillColor="#eeeeee" android:pathData="M-0.5,40l0,-40l1,-0l0,40z"/>
+    </group>
+</vector>

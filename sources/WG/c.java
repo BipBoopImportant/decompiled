@@ -1,0 +1,50 @@
+package Wg;
+
+import fI.C17221b;
+import kotlin.Metadata;
+
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0010\u000e\n\u0002\b!\b\u0002\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00000\u0002B\u0011\b\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\u0007\u001a\u00020\u0003H\u0016¢\u0006\u0004\b\u0007\u0010\bR\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0004¢\u0006\u0006\n\u0004\b\u0004\u0010\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001ej\u0002\b\u001fj\u0002\b j\u0002\b!j\u0002\b\"j\u0002\b#¨\u0006$"}, d2 = {"LWg/c;", "LWg/b;", "", "", "code", "<init>", "(Ljava/lang/String;ILjava/lang/String;)V", "a", "()Ljava/lang/String;", "Ljava/lang/String;", "ZIP_MISMATCH", "TAX_ID_ERROR", "ADDRESS_GENERIC", "ADDRESS_VALIDATION", "STATE_CODE", "STATE_MISMATCH", "BILLING_LAST_NAME", "BILLING_STREET", "BILLING_ZIP_CODE", "BILLING_CITY", "BILLING_STATE", "BILLING_COUNTRY", "BILLING_MOBILE", "BILLING_EMAIL", "BILLING_PHONETIC_FIRST_NAME", "BILLING_PHONETIC_LAST_NAME", "SHIPPING_LAST_NAME", "SHIPPING_STREET", "SHIPPING_ZIP_CODE", "SHIPPING_CITY", "SHIPPING_STATE", "SHIPPING_COUNTRY", "SHIPPING_MOBILE", "SHIPPING_EMAIL", "SHIPPING_PHONETIC_FIRST_NAME", "SHIPPING_PHONETIC_LAST_NAME", "common_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+public enum c implements b {
+    ZIP_MISMATCH("001"),
+    TAX_ID_ERROR("002"),
+    ADDRESS_GENERIC("003"),
+    ADDRESS_VALIDATION("004"),
+    STATE_CODE("005"),
+    STATE_MISMATCH("006"),
+    BILLING_LAST_NAME("101"),
+    BILLING_STREET("102"),
+    BILLING_ZIP_CODE("103"),
+    BILLING_CITY("104"),
+    BILLING_STATE("105"),
+    BILLING_COUNTRY("106"),
+    BILLING_MOBILE("107"),
+    BILLING_EMAIL("108"),
+    BILLING_PHONETIC_FIRST_NAME("109"),
+    BILLING_PHONETIC_LAST_NAME("110"),
+    SHIPPING_LAST_NAME("201"),
+    SHIPPING_STREET("202"),
+    SHIPPING_ZIP_CODE("203"),
+    SHIPPING_CITY("204"),
+    SHIPPING_STATE("205"),
+    SHIPPING_COUNTRY("206"),
+    SHIPPING_MOBILE("207"),
+    SHIPPING_EMAIL("208"),
+    SHIPPING_PHONETIC_FIRST_NAME("209"),
+    SHIPPING_PHONETIC_LAST_NAME("210");
+    
+    private final String code;
+
+    static {
+        c[] b10;
+        $ENTRIES = C17221b.a(b10);
+    }
+
+    private c(String str) {
+        this.code = str;
+    }
+
+    public String a() {
+        String str = this.code;
+        return "10.100." + str;
+    }
+}

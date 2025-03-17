@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_close_black" android:contentDescription="@string/accessibility_close" style="@style/BackFab"/>
+    <com.google.android.gms.maps.MapView android:id="@+id/map_view" android:background="@color/light_gray_100" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/map_bottom_margin"/>
+    <View android:id="@+id/map_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/map_bottom_margin"/>
+    <FrameLayout android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_anchor="@+id/bottom_sheet" app:layout_anchorGravity="800035">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/find_me" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:src="@drawable/ic_skapa_crosshair" android:contentDescription="@string/accessibility_find_my_location" android:layout_marginStart="@dimen/default_spacing_medium" android:layout_marginEnd="@dimen/default_spacing_medium" style="@style/BackFab"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_sheet" android:background="@drawable/bottom_sheet_background_rounded_corners" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/header_height" android:backgroundTint="@color/skapa_neutral_1" app:behavior_hideable="false" app:behavior_peekHeight="@dimen/header_height" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <FrameLayout android:layout_gravity="center" android:id="@+id/bottom_sheet_indicator_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/accessibility_expand_bottom_sheet">
+            <ImageView android:id="@+id/bottom_sheet_indicator" android:background="@drawable/bottom_sheet_indicator_collapsed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" android:importantForAccessibility="no"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/delegate_recyclerView" android:paddingTop="16dp" android:paddingBottom="16dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+    <com.ingka.ikea.app.uicomponents.view.progress.HorizontalProgressView android:layout_gravity="bottom" android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/HorizontalProgressBar.Blue"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

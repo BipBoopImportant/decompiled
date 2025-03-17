@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AciCheckoutTheme">
+        <item name="android:colorPrimaryDark">@color/blue</item>
+        <item name="checkoutButtonStyle">@style/AciCheckoutTheme.Button</item>
+        <item name="headerBackground">@color/blue</item>
+    </style>
+    <style name="AciCheckoutTheme.Button">
+        <item name="android:textColor">@color/checkout_button_text_color_light</item>
+    </style>
+    <style name="Base.Theme.MaterialThemeBuilder">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:navigationBarColor">@color/view_background_base</item>
+        <item name="?0x10104e0">false</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.DayNight">
+    </style>
+    <style name="Base.Theme.Sugarcube">
+        <item name="android:colorBackground">@color/view_background_base</item>
+        <item name="android:ambientShadowAlpha">0.1</item>
+        <item name="android:spotShadowAlpha">0.04</item>
+        <item name="actionMenuTextColor">@color/grey_900</item>
+        <item name="actionModeCloseDrawable">@drawable/sc_ic_close_cancel</item>
+        <item name="actionModeStyle">@style/Sugarcube.ActionMode.Style</item>
+        <item name="colorError">@color/ikea_red</item>
+        <item name="colorOnBackground">@color/primary_text_color</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/secondary_text_color</item>
+        <item name="colorOnSurface">@color/primary_text_color</item>
+        <item name="colorPrimary">@color/ikea_blue</item>
+        <item name="colorPrimaryVariant">@color/ikea_family_blue</item>
+        <item name="colorSecondary">@color/ikea_yellow</item>
+        <item name="colorSecondaryVariant">@color/ikea_family_yellow</item>
+        <item name="colorSurface">@color/card_background_base</item>
+        <item name="decorateButtonStyle">@style/Sugarcube.Button.Decorate</item>
+        <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Sugarcube.LargeComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Sugarcube.MediumComponent</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Sugarcube.SmallComponent</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Sugarcube.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Sugarcube.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Sugarcube.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Sugarcube.Caption</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Sugarcube.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Sugarcube.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Sugarcube.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Sugarcube.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Sugarcube.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Sugarcube.Headline6</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Sugarcube.Overline</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Sugarcube.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Sugarcube.Subtitle2</item>
+        <item name="toolbarStyle">@style/Widget.Sugarcube.Toolbar.Primary</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Material3.DayNight">
+    </style>
+    <style name="Theme.Material3.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.Material3.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Material3.DayNight.SideSheetDialog">
+    </style>
+    <style name="Theme.Material3.DynamicColors.DayNight">
+    </style>
+    <style name="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    </style>
+    <style name="Theme.Skapa">
+        <item name="android:windowBackground">@color/skapa_static_black</item>
+        <item name="android:textViewStyle">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:fontFamily">@font/noto_ikea_latin_regular</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="backgroundColor">@color/skapa_static_black</item>
+        <item name="colorError">@color/skapa_semantic_negative</item>
+        <item name="colorOnBackground">@color/skapa_text_and_icon_2</item>
+        <item name="colorOnError">@color/skapa_static_white</item>
+        <item name="colorOnPrimary">@color/skapa_static_white</item>
+        <item name="colorOnSecondary">@color/skapa_static_black</item>
+        <item name="colorOnSurface">@color/skapa_text_and_icon_2</item>
+        <item name="colorPrimary">@color/skapa_static_ikea_brand_blue</item>
+        <item name="colorPrimaryVariant">@color/skapa_static_ikea_brand_blue</item>
+        <item name="colorSecondary">@color/skapa_static_white</item>
+        <item name="colorSecondaryVariant">@color/skapa_static_white</item>
+        <item name="colorSurface">@color/skapa_elevation_2</item>
+        <item name="fontFamily">@font/noto_ikea_latin_regular</item>
+    </style>
+    <style name="Theme.Skapa.PopupOverlay">
+        <item name="android:textSize">@dimen/fontSize100</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:fontFamily">@font/noto_ikea_latin_regular</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/noto_ikea_latin_regular</item>
+        <item name="lineHeight">@dimen/lineHeight100Long</item>
+    </style>
+    <style name="Theme.Sugarcube.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight">
+    </style>
+    <style name="ThemeOverlay.Material3.DynamicColors.DayNight">
+    </style>
+</resources>

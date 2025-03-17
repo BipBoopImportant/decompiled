@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">Prikazuje se predlog %s</item>
+        <item quantity="other">Prikaz %s predloga</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s od %2$d zvezdica od korisnika %3$d </item>
+        <item quantity="few">%1$s od %2$d zvezdica od korisnika %3$d </item>
+        <item quantity="other">%1$s od %2$d zvezdica od korisnika %3$d</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">Pretraga je dala %d rezultat</item>
+        <item quantity="few">Pretraga je dala %d rezultata</item>
+        <item quantity="other">Pretraga je dala %d rezultata</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d popust aktivan</item>
+        <item quantity="other">%1$d popusti aktivni</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d od %2$d je dostupan</item>
+        <item quantity="few">%1$d od %2$d su dostupni</item>
+        <item quantity="other">%1$d od %2$d su dostupni</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d od %2$d nije dostupan</item>
+        <item quantity="few">%1$d od %2$d nisu dostupni</item>
+        <item quantity="other">%1$d od %2$d nisu dostupni</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">Broj pošiljki na koje će tvoja isporuka biti podeljena je %1$d</item>
+        <item quantity="few">Broj pošiljki na koje će tvoja isporuka biti podeljena je %1$d</item>
+        <item quantity="other">Broj pošiljki na koje će tvoja isporuka biti podeljena je %1$d</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">Pogledaj%d artikle za ovu isporuku</item>
+        <item quantity="other"> Pogledaj sve%d artikle za ovu isporuku</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d artikal</item>
+        <item quantity="few">%d artikala</item>
+        <item quantity="other">%d artikala</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Predviđeno vreme čekanja: %smin.</item>
+        <item quantity="other">Predviđeno vreme čekanja: %s min.</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d novo obaveštenje</item>
+        <item quantity="other">%d nova obaveštenja</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">Imaš %1$d novo obaveštenje od kompanije IKEA</item>
+        <item quantity="other">Imaš %1$d nova obaveštenja od kompanije IKEA</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d artikal</item>
+        <item quantity="few">%d artikala</item>
+        <item quantity="other">%d artikala</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d proizvod</item>
+        <item quantity="other">%d proizvoda</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">%ddan je ostao</item>
+        <item quantity="other">%d dana ostalo</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%d proizvod</item>
+        <item quantity="other">%d proizvoda</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">Prikazan %d proizvod</item>
+        <item quantity="few">Prikazano %d proizvoda</item>
+        <item quantity="other">Prikazano %d proizvoda</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">Prikazuje se %d proizvod</item>
+        <item quantity="few">Prikazuju se %d proizvoda</item>
+        <item quantity="other">Prikazuje se %d proizvoda</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d dizajn</item>
+        <item quantity="few">%d dizajna</item>
+        <item quantity="other">%d dizajna</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d predmet</item>
+        <item quantity="few">%d stavke</item>
+        <item quantity="other">%d predmeta</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="few">%d minuta</item>
+        <item quantity="other">%d minuta</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d prostorija uklonjena</item>
+        <item quantity="few">%d soba je uklonjeno</item>
+        <item quantity="other">%d prostorije uklonjene</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$d proizvod se može dodati u korpu</item>
+        <item quantity="other">%1$d proizvodi se mogu dodati u korpu</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$d proizvod je nedostupan</item>
+        <item quantity="other">%1$d proizvodi su nedostupni</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d artikal je ubačen u korpu</item>
+        <item quantity="few">%d artikala je ubačeno u korpu</item>
+        <item quantity="other">%d artikala je ubačeno u korpu</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d proizvod</item>
+        <item quantity="other">%d proizvoda</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%dOdrasla osoba</item>
+        <item quantity="other">%d Odrasli</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%d Dete</item>
+        <item quantity="other">%d Deca</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="one">Ostalo je samo %d mesto!</item>
+        <item quantity="other">Još samo %d mesta!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">Još %d sesija</item>
+        <item quantity="other">Još %d sesija</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">%1$d artikal nije dostupan za ovu vrstu isporuke</item>
+        <item quantity="few">%1$d artikala nije dostupno za ovu vrstu isporuke</item>
+        <item quantity="other">%1$d artikala nije dostupno za ovu vrstu isporuke</item>
+    </plurals>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/CardView.Shadow">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="2">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/imageScene" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sc_ic_placeholder" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@string/sc_content_description_image" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="2.0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <ImageButton android:id="@+id/showMoreButton" android:visibility="visible" android:layout_marginTop="16dp" android:src="@drawable/sc_ic_more" android:contentDescription="@string/sc_content_description_button" android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Sugarcube.Button.IconOnly.Dark"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <include android:id="@+id/cardDetailLayoutUploadWaiting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/scene_cardview_uploading"/>
+            <include android:id="@+id/cardDetailLayoutUploadLogin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/scene_cardview_uploading_pending_login"/>
+            <include android:id="@+id/cardDetailLayoutProcessing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/scene_cardview_processing"/>
+            <include android:id="@+id/cardDetailLayoutUploadFailed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/scene_cardview_uploading_error"/>
+            <include android:id="@+id/cardDetailLayoutError" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/scene_cardview_error"/>
+            <include android:id="@+id/cardDetailLayoutDesignReady" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/scene_cardview_design_ready"/>
+            <include android:id="@+id/cardDetailLayoutDesignExisting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/scene_cardview_design_existing"/>
+            <include android:id="@+id/cardDetailLayoutShowroomReady" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/scene_cardview_showroom_ready"/>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

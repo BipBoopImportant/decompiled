@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fte_navigation" app:startDestination="@+id/dataConsentFragment">
+    <fragment android:label="DataConsentFragment" android:name="com.ingka.ikea.app.splash.onboarding.steps.consent.ConsentFragment" android:id="@+id/dataConsentFragment"/>
+</navigation>

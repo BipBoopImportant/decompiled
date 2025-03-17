@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">Se afișează %s sugestie</item>
+        <item quantity="other">Se afișează %s sugestii</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s din %2$d stele de la %3$d utilizator</item>
+        <item quantity="few">%1$s din %2$d stele de la %3$d utilizatori</item>
+        <item quantity="other">%1$s din %2$d stele de la %3$d utilizatori</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">Căutarea a avut ca rezultat %d rezultat</item>
+        <item quantity="few">Căutarea a returnat %d rezultate</item>
+        <item quantity="other">Căutarea a avut ca rezultat %d rezultate</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d reducere activă</item>
+        <item quantity="other">%1$d reduceri active</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d din %2$d este disponibil</item>
+        <item quantity="few">%1$d din %2$d sunt disponibile</item>
+        <item quantity="other">%1$d din %2$d sunt disponibile</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d din %2$d nu este disponibil</item>
+        <item quantity="few">%1$d din %2$d nu sunt disponibile</item>
+        <item quantity="other">%1$d din %2$d nu sunt disponibile</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">Livrarea va fi împărțită în %1$d expediere</item>
+        <item quantity="few">Livrarea comenzii tale va fi împărțită în %1$d expedieri</item>
+        <item quantity="other">Livrarea va fi împărțită în %1$d expedieri</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">Afișează %d articolul inclus în această livrare</item>
+        <item quantity="other">Afișează toate %d articolele incluse în această livrare</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d articol</item>
+        <item quantity="few">%d articole</item>
+        <item quantity="other">%d articole</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Timp estimat de așteptare: %s minut</item>
+        <item quantity="other">Timp estimat de așteptare: %s minute</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="other">%d notificări noi</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">Ai primit o %1$d notificare nouă de la IKEA</item>
+        <item quantity="other">Ai primit %1$d notificări noi de la IKEA</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d articol</item>
+        <item quantity="few">%d articole</item>
+        <item quantity="other">%d articole</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d produs</item>
+        <item quantity="other">%d produse</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">%d zile rămase</item>
+        <item quantity="other">%d zile rămase</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%d produs</item>
+        <item quantity="other">%d produse</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">Se afișează %d produs</item>
+        <item quantity="few">Se afișează %d produse</item>
+        <item quantity="other">Se afișează %d produse</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">Se afișează %d produs</item>
+        <item quantity="few">Se afișează %d produse</item>
+        <item quantity="other">Se afișează %d produse</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d schiță</item>
+        <item quantity="few">%d de designuri</item>
+        <item quantity="other">%d schițe</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d articol</item>
+        <item quantity="few">%d de articole</item>
+        <item quantity="other">%d articole</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="other">%d minute</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d cameră eliminată</item>
+        <item quantity="few">%d camere eliminate</item>
+        <item quantity="other">%d camere eliminate</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$d produs poate fi adăugat în coș</item>
+        <item quantity="other">%1$d produse pot fi adăugate în coș</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$d produs indisponibil</item>
+        <item quantity="other">%1$d produse indisponibile</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d articol a fost copiat în coș</item>
+        <item quantity="few">%d articole au fost copiate în coș</item>
+        <item quantity="other">%d articole au fost copiate în coș</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d produs</item>
+        <item quantity="other">%d produse</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%d adult</item>
+        <item quantity="other">%d adulți</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%d copil</item>
+        <item quantity="other">%d copii</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="one">A mai rămas doar %d loc!</item>
+        <item quantity="other">Au mai rămas doar %d locuri!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">Încă %d sesiune</item>
+        <item quantity="other">%d mai multe sesiuni</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">%1$d articol nu este disponibil cu această metodă de livrare</item>
+        <item quantity="few">%1$d articole nu sunt disponibile cu această metodă de livrare</item>
+        <item quantity="other">%1$d articole nu sunt disponibile cu această metodă de livrare</item>
+    </plurals>
+</resources>

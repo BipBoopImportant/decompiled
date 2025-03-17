@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">Showing %s suggestion</item>
+        <item quantity="other">Showing %s suggestions</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s of %2$d stars from %3$d user</item>
+        <item quantity="other">%1$s of %2$d stars from %3$d users</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">Search resulted in %d result</item>
+        <item quantity="other">Search resulted in %d results</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d discount active</item>
+        <item quantity="other">%1$d discounts active</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d of %2$d is available</item>
+        <item quantity="other">%1$d of %2$d are available</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d of %2$d is available</item>
+        <item quantity="other">%1$d of %2$d are not available</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">Your delivery will be split in %1$d shipment</item>
+        <item quantity="other">Your delivery will be split in %1$d shipments</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">View %d item for this delivery</item>
+        <item quantity="other">View all %d items for this delivery</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Estimated waiting time: %s min</item>
+        <item quantity="other">Estimated waiting time: %s mins</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">You have %1$d new notification from IKEA</item>
+        <item quantity="other">You have %1$d new notifications from IKEA</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">%d day left</item>
+        <item quantity="other">%d days left</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">Showing %d product</item>
+        <item quantity="other">Showing %d products</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">Showing %d product</item>
+        <item quantity="other">Showing %d products</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d design</item>
+        <item quantity="other">%d designs</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d room removed</item>
+        <item quantity="other">%d rooms removed</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$d product can be added to your bag</item>
+        <item quantity="other">%1$d products can be added to your bag</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$d product is unavailable</item>
+        <item quantity="other">%1$d products are unavailable</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d item was copied to cart</item>
+        <item quantity="other">%d items were copied to cart</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%d Adult</item>
+        <item quantity="other">%d Adults</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%d Child</item>
+        <item quantity="other">%d Children</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="one">Only %d spot left!</item>
+        <item quantity="other">Only %d spots left!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">%d more session</item>
+        <item quantity="other">%d more sessions</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">%1$d item isn&apos;t available with this delivery method</item>
+        <item quantity="other">%1$d items aren&apos;t available with this delivery method</item>
+    </plurals>
+</resources>

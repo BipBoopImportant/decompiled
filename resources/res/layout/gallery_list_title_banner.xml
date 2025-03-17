@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" app:cardCornerRadius="@dimen/sc_round_corner_radius" app:cardElevation="0dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/gallery_list_title_banner_image" android:background="@color/grey_200" android:layout_width="match_parent" android:layout_height="128dp" android:scaleType="centerCrop" android:contentDescription="@string/sc_content_description_image" app:tint="@color/grey_900_quarter_transparent" app:tintMode="src_over"/>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/gallery_list_title_banner_title" android:layout_width="match_parent" android:layout_height="match_parent" android:textAlignment="center" style="@style/TextAppearance.Sugarcube.CardView.Title"/>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

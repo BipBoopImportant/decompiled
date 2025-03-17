@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/appbar" layout="@layout/appbar_layout"/>
+    <com.sugarcube.app.base.ui.utils.BouncingBallView android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ScrollView android:id="@+id/gallery_landing_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingTop="16dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <androidx.compose.ui.platform.ComposeView android:id="@+id/composeContent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <include android:id="@+id/landing_help" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" layout="@layout/gallery_landing_card_need_help"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/login_layout" android:background="@color/view_background_base" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="4dp" android:paddingEnd="4dp">
+                <TextView android:id="@+id/login_body" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sc_gallery_sign_up_or_login" android:textAlignment="textStart" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextAppearance.Sugarcube.Card.Body"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/login_sign_up_button" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/sc_button_sign_up" android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/login_log_in_button" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/login_body" style="@style/Sugarcube.Button.Outlined"/>
+                <com.google.android.material.button.MaterialButton android:textColor="@color/primary_button_variant_1_text_color" android:id="@+id/login_log_in_button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sc_button_log_in" android:backgroundTint="@color/primary_button_variant_1_background" app:layout_constraintBottom_toBottomOf="@+id/login_sign_up_button" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/login_sign_up_button" app:layout_constraintTop_toTopOf="@+id/login_sign_up_button" style="@style/Sugarcube.Button.Primary"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

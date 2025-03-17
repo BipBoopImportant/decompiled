@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/$oppwa_nfc_helper_anim__0">
+    <target android:name="phone" android:animation="@drawable/$oppwa_nfc_helper_anim__1"/>
+    <target android:name="phone_inner" android:animation="@drawable/$oppwa_nfc_helper_anim__2"/>
+    <target android:name="card" android:animation="@drawable/$oppwa_nfc_helper_anim__3"/>
+    <target android:name="card_inner" android:animation="@drawable/$oppwa_nfc_helper_anim__4"/>
+    <target android:name="nfc" android:animation="@drawable/$oppwa_nfc_helper_anim__5"/>
+    <target android:name="nfc_inner" android:animation="@drawable/$oppwa_nfc_helper_anim__6"/>
+</animated-vector>

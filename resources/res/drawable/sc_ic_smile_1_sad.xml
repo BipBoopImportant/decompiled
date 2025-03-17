@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="48dp" android:width="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="@color/navigation_icon_base" android:pathData="M24,39C32.2843,39 39,32.2843 39,24C39,15.7157 32.2843,9 24,9C15.7157,9 9,15.7157 9,24C9,32.2843 15.7157,39 24,39ZM24,42C33.9411,42 42,33.9411 42,24C42,14.0589 33.9411,6 24,6C14.0589,6 6,14.0589 6,24C6,33.9411 14.0589,42 24,42Z" android:fillType="1"/>
+    <path android:fillColor="@color/navigation_icon_base" android:pathData="M14.5653,32.1203C15.7488,28.2409 19.5452,25.5078 23.9277,25.5078C28.3102,25.5078 32.1066,28.2409 33.2901,32.1203L30.4206,32.9957C29.6498,30.469 27.0876,28.5078 23.9277,28.5078C20.7678,28.5078 18.2056,30.469 17.4347,32.9957L14.5653,32.1203Z" android:fillType="1"/>
+    <path android:fillColor="@color/navigation_icon_base" android:pathData="M21.4496,19.5049C21.4496,20.8856 20.3303,22.0049 18.9496,22.0049C17.5689,22.0049 16.4496,20.8856 16.4496,19.5049C16.4496,18.1242 17.5689,17.0049 18.9496,17.0049C20.3303,17.0049 21.4496,18.1242 21.4496,19.5049Z"/>
+    <path android:fillColor="@color/navigation_icon_base" android:pathData="M31.5504,19.5049C31.5504,20.8856 30.4311,22.0049 29.0504,22.0049C27.6697,22.0049 26.5504,20.8856 26.5504,19.5049C26.5504,18.1242 27.6697,17.0049 29.0504,17.0049C30.4311,17.0049 31.5504,18.1242 31.5504,19.5049Z"/>
+</vector>

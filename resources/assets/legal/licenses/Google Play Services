@@ -1,0 +1,2 @@
+empty by design; we fetch the license info by calling "GoogleApiAvailability.getInstance().getOpenSourceSoftwareLicenseInfo(getContext());" instead.
+But this file is kept to prevent it from being automatically generated anew through the fetchLicenses Gradle task.

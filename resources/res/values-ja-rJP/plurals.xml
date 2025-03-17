@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="other">見せている %s おすすめ</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="other">%1$sの%2$dからの星%3$dユーザー</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="other">検索の結果%d結果</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="other">%1$d割引が有効</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="other">%1$dの%2$d利用できます</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="other">%1$dの%2$d利用できません</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="other">配送は次のように分割されます%1$d出荷数</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="other">この配送の全%dアイテムを表示</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="other">%d個のアイテム</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="other">推定待ち時間：%s分</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="other">%d新しい通知</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="other">あなたが持っている%1$dイケアからの新着通知</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="other">%d個のアイテム</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="other">%d個の商品</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="other">残り%d日</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="other">%d個の商品</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="other">%d個の商品を表示</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="other">%d個の商品を表示</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="other">%d種類のデザイン</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="other">%d個のアイテム</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="other">%d部屋が削除されました</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="other">%1$d商品をバッグに追加できます</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="other">%1$d商品は利用できません</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="other">%dアイテムがカートにコピーされました</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="other">%d個の商品</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="other">大人%d人</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="other">子ども%d人</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="other">残りあと%d枠のみ！</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="other">残り%d枠</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="other">%1$dこの配送方法では商品を購入できません</item>
+    </plurals>
+</resources>

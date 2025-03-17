@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">Zobrazení návrhu %s</item>
+        <item quantity="other">Zobrazení návrhů %s</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s z %2$d hvězdiček od uživatele %3$d </item>
+        <item quantity="few">%1$s z %2$d hvězdiček od %3$d uživatelů</item>
+        <item quantity="many">%1$s z %2$d hvězdiček od %3$d uživatelů</item>
+        <item quantity="other">%1$s z %2$d hvězdiček od uživatele %3$d</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">Hledání má %d výsledek</item>
+        <item quantity="few">Při vyhledávání byly nalezeny : %d výsledky</item>
+        <item quantity="many">Při vyhledávání bylo nalezeno %d výsledků</item>
+        <item quantity="other">Hledání má %d výsledky/výsledků</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d sleva aktivní</item>
+        <item quantity="other">%1$d slevy aktivní</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d z %2$d je k dispozici</item>
+        <item quantity="few">Dostupnost: %1$d z %2$d </item>
+        <item quantity="many">Dostupnost: %1$d z %2$d</item>
+        <item quantity="other">%1$d z %2$d je k dispozici</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d z %2$d není k dispozici</item>
+        <item quantity="few">%1$d z %2$d není k dispozici</item>
+        <item quantity="many">%1$d z %2$d není k dispozici</item>
+        <item quantity="other">%1$d z %2$d není k dispozici</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">Vaše objednávka bude rozdělena na %1$d zásilku</item>
+        <item quantity="few">Vaše objednávka bude doručena ve %1$d zásilkách </item>
+        <item quantity="many">Vaše objednávka bude doručena ve %1$d zásilkách</item>
+        <item quantity="other">Vaše objednávka bude rozdělena na %1$d zásilky/zásilek</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">Zobrazit %d položku pro toto doručení</item>
+        <item quantity="other">Zobrazit všechny položky (%d) pro toto doručení</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d položka</item>
+        <item quantity="few">%d výrobky</item>
+        <item quantity="many">%d výrobků</item>
+        <item quantity="other">%d položky/položek</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Předpokládaná čekací doba: %s min</item>
+        <item quantity="other">Předpokládaná čekací doba: %s min</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d nové oznámení</item>
+        <item quantity="other">%d nová oznámení / nových oznámení</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">Máte %1$d nové oznámení od IKEA</item>
+        <item quantity="many">Máte %1$d nová oznámení od společnosti IKEA</item>
+        <item quantity="other"> Máte %1$d nová/nových oznámení od IKEA</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d položka</item>
+        <item quantity="few">%d výrobky</item>
+        <item quantity="many">%d položek</item>
+        <item quantity="other">%d položky/položek</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d výrobek</item>
+        <item quantity="other">%d výrobky</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">%d den zbývá</item>
+        <item quantity="other">%d dny/dnů zbývají/zbývá</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%d výrobek</item>
+        <item quantity="few">%d produktů</item>
+        <item quantity="many">%d produktů</item>
+        <item quantity="other">%d výrobky/ů</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">Zobrazujeme %d výrobek</item>
+        <item quantity="few">Zobrazují %d výrobky</item>
+        <item quantity="many">Zobrazuje se %d výrobků </item>
+        <item quantity="other">Zobrazujeme %d výrobky/výrobků</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">Zobrazujeme %d výrobek</item>
+        <item quantity="other">Zobrazujeme %d výrobky/výrobků</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d návrh</item>
+        <item quantity="other">%d návrhy/návrhů</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d položka</item>
+        <item quantity="other">%d položky/položek</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d minuta</item>
+        <item quantity="other">%d minuty/minut</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d odstraněná místnost</item>
+        <item quantity="other">%d odstraněné místnosti / odstraněných místností</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$dvýrobek lze přidat do nákupního košíku</item>
+        <item quantity="other">%1$d výrobky lze přidat do nákupního košíku</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$d výrobek není k dispozici</item>
+        <item quantity="other">%1$d výrobky nejsou k dispozici</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d výrobek byl zkopírován do košíku</item>
+        <item quantity="few">%d položek bylo zkopírováno do košíku</item>
+        <item quantity="many">%d položek bylo zkopírováno do košíku</item>
+        <item quantity="other">%d výrobky byly zkopírovány do košíku</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d výrobek</item>
+        <item quantity="other">%d výrobky</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%d Dospělý</item>
+        <item quantity="other">%d Dospělí</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%d Dítě</item>
+        <item quantity="other">%d Děti</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="one">Už zbývá jen %d místo!</item>
+        <item quantity="other">Už zbývá jen tento počet míst: %d!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">%d další termín</item>
+        <item quantity="other">%d další termíny</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">%1$d výrobek není u tohoto způsobu doručení k dispozici</item>
+        <item quantity="few">%1$d položky nejsou s touto metodou doručení k dispozici</item>
+        <item quantity="many">%1$d položky nejsou s touto metodou doručení k dispozici</item>
+        <item quantity="other">%1$d výrobky nejsou u tohoto způsobu doručení k dispozici</item>
+    </plurals>
+</resources>

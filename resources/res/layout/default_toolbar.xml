@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@+id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:touchscreenBlocksFocus="false" android:keyboardNavigationCluster="false" app:elevation="0dp">
+        <com.ingka.ikea.core.android.view.IkeaToolBar android:theme="@style/IkeaAppTheme.Widget.Toolbar" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64dp" android:touchscreenBlocksFocus="false" android:keyboardNavigationCluster="false" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" style="@style/ActionBarStyle">
+            <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/appcompat_title_view"/>
+        </com.ingka.ikea.core.android.view.IkeaToolBar>
+    </com.google.android.material.appbar.AppBarLayout>
+</merge>

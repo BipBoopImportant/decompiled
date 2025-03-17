@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">Viser %s forslag</item>
+        <item quantity="other">Viser %s forslag</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s af %2$d stjerner fra %3$d bruger</item>
+        <item quantity="other">%1$s af %2$d stjerner fra %3$d brugere</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">Søgning resulterede i %d resultat</item>
+        <item quantity="other">Søgning resulterede i %d resultater</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d rabat aktiv</item>
+        <item quantity="other">%1$d rabatter aktive</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d af %2$d er tilgængelig</item>
+        <item quantity="other">%1$d af %2$d er tilgængelige</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d af %2$d er ikke tilgængelig</item>
+        <item quantity="other">%1$d af %2$d er ikke tilgængelige</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">Din levering vil blive opdelt i %1$d forsendelse</item>
+        <item quantity="other">Din levering vil blive opdelt i %1$d forsendelser</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">Vis %d produkt i denne levering</item>
+        <item quantity="other">Vis alle %d produkter i denne levering</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d vare</item>
+        <item quantity="other">%d varer</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Anslået ventetid: %s min</item>
+        <item quantity="other">Anslået ventetid: %s min</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d ny meddelelse</item>
+        <item quantity="other">%d nye meddelelser</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">Du har %1$d ny notifikation fra IKEA </item>
+        <item quantity="other">Du har%1$d nye notifikationer fra IKEA </item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d vare</item>
+        <item quantity="other">%d varer</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d produkt</item>
+        <item quantity="other">%d produkter</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">%d dag tilbage</item>
+        <item quantity="other">%d dage tilbage</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%d produkt</item>
+        <item quantity="other">%d produkter</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">Viser %d produkt</item>
+        <item quantity="other">Viser %d produkter</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">Viser %d produkt</item>
+        <item quantity="other">Viser %d produkter</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d design</item>
+        <item quantity="other">%d design</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d produkt</item>
+        <item quantity="other">%d produkter</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="other">%d minutter</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d rum slettet</item>
+        <item quantity="other">%d rum slettet</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$d produkt kan tilføjes til din indkøbskurv</item>
+        <item quantity="other">%1$d produkter kan tilføjes til din indkøbskurv</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$dproduktet ikke er tilgængeligt</item>
+        <item quantity="other">%1$d</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d produkt tilføjet til indkøbskurv</item>
+        <item quantity="other">%d produkter tilføjet til indkøbskurv</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d produkt</item>
+        <item quantity="other">%d produkter</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%d Voksne</item>
+        <item quantity="other">%d voksne</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%dBarn</item>
+        <item quantity="other">%dBørn</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="one">Kun %d plads tilbage!</item>
+        <item quantity="other">Kun %d steder tilbage!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">%dflere arrangementer</item>
+        <item quantity="other">%d</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">%1$d vare er ikke tilgængelig med denne leveringsmetode</item>
+        <item quantity="other">%1$d varer er ikke tilgængelige med denne leveringsmetode</item>
+    </plurals>
+</resources>

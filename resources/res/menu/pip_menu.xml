@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_skapa_share_network" android:id="@+id/share_item" android:title="@string/share_item" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_skapa_heart" android:id="@+id/add_to_sl" android:title="@string/product_detail_addToSL_level" app:showAsAction="always"/>
+</menu>

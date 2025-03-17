@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="160dp">
+    <include android:id="@+id/toolbar_item_variant_list" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="@+id/toolbar_background" layout="@layout/draggable_toolbar_item_variant_list"/>
+    <View android:id="@+id/toolbar_background" android:background="@color/toolbar_color" android:layout_width="64dp" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0"/>
+    <include android:id="@+id/toolbar_scene_controls" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" layout="@layout/draggable_toolbar_controls"/>
+    <include android:id="@+id/toolbar_item_controls" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" layout="@layout/draggable_toolbar_item_controls"/>
+    <include android:id="@+id/toolbar_item_rotator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" layout="@layout/draggable_toolbar_item_rotator"/>
+    <include android:id="@+id/toolbar_item_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" layout="@layout/draggable_toolbar_item_list"/>
+    <include android:id="@+id/toolbar_erase_controls" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" layout="@layout/draggable_toolbar_erase_controls"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

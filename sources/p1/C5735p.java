@@ -1,0 +1,5 @@
+package p1;
+
+/* renamed from: p1.p  reason: case insensitive filesystem */
+public final /* synthetic */ class C5735p {
+}

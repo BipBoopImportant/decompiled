@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">Es mostra el suggeriment %s</item>
+        <item quantity="other">Es mostren %s suggeriments</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s de %2$d estrelles d&apos;%3$dusuari</item>
+        <item quantity="other">%1$s de %2$d estrelles de %3$d usuaris</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">La cerca ha proporcionat %d resultat</item>
+        <item quantity="other">La cerca ha proporcionat %d resultats</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d descompte actiu</item>
+        <item quantity="other">%1$d descomptes actius</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d de %2$d està disponible</item>
+        <item quantity="other">%1$d de %2$d estan disponibles</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d de %2$d no està disponible</item>
+        <item quantity="other">%1$d de %2$d no estan disponibles</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">El vostre lliurament es dividirà en %1$d enviament</item>
+        <item quantity="other">El vostre lliurament es dividirà en %1$d enviaments</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">Consulta %d article per a aquest lliurament</item>
+        <item quantity="other">Consulta els %d articles per a aquest lliurament</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d article</item>
+        <item quantity="other">%d articles</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Temps d&apos;espera estimat: %s min</item>
+        <item quantity="other"> Temps d&apos;espera estimat: %s minuts</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d nova notificació</item>
+        <item quantity="other">%d noves notificacions</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">Tens %1$d notificació nova d&apos;IKEA</item>
+        <item quantity="other">Tens %1$d notificacions noves d&apos;IKEA</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d article</item>
+        <item quantity="other">%d articles</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d producte</item>
+        <item quantity="other">%d productes</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">Queda %d dia</item>
+        <item quantity="other">Queden %d dies</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%d producte</item>
+        <item quantity="other">%d productes</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">S&apos;està mostrant %d producte</item>
+        <item quantity="other">S&apos;estan mostrant %d productes</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">S&apos;està mostrant %d producte</item>
+        <item quantity="other">S&apos;estan mostrant %d productes</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d disseny</item>
+        <item quantity="other">%d dissenys</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d element</item>
+        <item quantity="other">%d elements</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="other">%d minuts</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d estança suprimida</item>
+        <item quantity="other">%d estances suprimides</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$d producte es pot afegir al carretó</item>
+        <item quantity="other">%1$d productes es poden afegir al carretó</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$d producte no està disponible</item>
+        <item quantity="other">%1$d productes no estan disponibles</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d element s&apos;ha copiat al carretó</item>
+        <item quantity="other">%d elements s&apos;han copiat al carretó</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d producte</item>
+        <item quantity="other">%d productes</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%dAdult</item>
+        <item quantity="other">%d Adults</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%dNen</item>
+        <item quantity="other">%d Nens</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="one">Només queda %d lloc!</item>
+        <item quantity="other">Només queden %d llocs!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">%d sessió més</item>
+        <item quantity="other">%d sessions més</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">L&apos;element %1$d no està disponible amb aquest mètode de lliurament</item>
+        <item quantity="other">Els articles %1$d no estan disponibles amb aquest mètode de lliurament</item>
+    </plurals>
+</resources>

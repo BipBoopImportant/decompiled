@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@android:anim/linear_interpolator" android:duration="9999" android:drawable="@drawable/sc_ic_progress_gallery" android:fromDegrees="90" android:toDegrees="2600" android:pivotX="50%" android:pivotY="50%" android:repeatCount="infinite"/>

@@ -1,0 +1,39 @@
+package com.google.android.libraries.places.internal;
+
+public final class zzoi extends zzago implements zzahx {
+    /* access modifiers changed from: private */
+    public static final zzoi zzb;
+    private int zzd;
+    private zzom zze;
+    private zzok zzf;
+
+    static {
+        zzoi zzoi = new zzoi();
+        zzb = zzoi;
+        zzago.zzI(zzoi.class, zzoi);
+    }
+
+    private zzoi() {
+    }
+
+    /* access modifiers changed from: protected */
+    public final Object zzb(int i10, Object obj, Object obj2) {
+        int i11 = i10 - 1;
+        if (i11 == 0) {
+            return (byte) 1;
+        }
+        if (i11 == 2) {
+            return zzago.zzF(zzb, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0000\u0000\u0001ဉ\u0000\u0002ဉ\u0001", new Object[]{"zzd", "zze", "zzf"});
+        } else if (i11 == 3) {
+            return new zzoi();
+        } else {
+            if (i11 == 4) {
+                return new zzoh((zzoe) null);
+            }
+            if (i11 != 5) {
+                return null;
+            }
+            return zzb;
+        }
+    }
+}

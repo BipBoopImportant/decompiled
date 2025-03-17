@@ -1,0 +1,444 @@
+{
+  "dependencies": [
+    {
+      "ignored": true,
+      "name": "Not open source libs",
+      "license": "",
+      "copyright": "",
+      "artifacts": [
+        "com.akamai:botman",
+        "com.aci:oppwa.mobile",
+        "com.nsoftware:ipworks3ds",
+        "net.ikea.skapa:skapa-bom",
+        "net.ikea.skapa:design",
+        "net.ikea.skapa:foundation",
+        "net.ikea.skapa:icons",
+        "com.ingka.ikea:coroutineinjection",
+        "com.sugarcube:sugarcube",
+        "com.adjust.sdk:adjust-android",
+        "com.adjust.sdk:signaturev2",
+        "com.ingka.ikea.app:caasremote",
+        "com.ingka.ikea:kompass-map",
+        "com.ingka.ikea:episod-core",
+        "com.ingka.ikea:episod-events",
+        "com.contentsquare.android:library",
+        "com.contentsquare.android:compose"
+      ]
+    },
+    {
+      "name": "Google Play Services",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://developer.android.com/studio/terms.html",
+      "artifacts": [
+        "com.google.android.gms:play-services-location",
+        "com.google.android.gms:play-services-auth",
+        "com.google.android.gms:play-services-awareness",
+        "com.google.android.gms:play-services-base",
+        "com.google.android.gms:play-services-wallet",
+        "com.google.android.gms:play-services-maps",
+        "com.google.android.gms:play-services-vision",
+        "com.google.android.gms:play-services-mlkit-barcode-scanning",
+        "com.google.android.play:app-update",
+        "com.google.android.play:app-update-ktx",
+        "com.google.maps.android:maps-compose",
+        "com.google.android.play:review-ktx"
+      ]
+    },
+    {
+      "name": "Kotlin",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright 2000-2020 JetBrains s.r.o. and Kotlin Programming Language contributors.",
+      "artifacts": [
+        "org.jetbrains.kotlin:kotlin-reflect",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-play-services",
+        "org.jetbrains.kotlinx:kotlinx-collections-immutable",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json"
+      ]
+    },
+    {
+      "name": "AndroidX",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://developer.android.com/studio/terms.html",
+      "artifacts": [
+        "androidx.activity:activity-compose",
+        "androidx.activity:activity-ktx",
+        "androidx.appcompat:appcompat",
+        "androidx.camera:camera-camera2",
+        "androidx.camera:camera-lifecycle",
+        "androidx.camera:camera-view",
+        "androidx.camera:camera-mlkit-vision",
+        "androidx.compose:compose-bom",
+        "androidx.compose.runtime:runtime",
+        "androidx.compose.material:material",
+        "androidx.compose.material3.adaptive:adaptive",
+        "androidx.compose.material3:material3",
+        "androidx.compose.material3:material3-window-size-class",
+        "androidx.compose.runtime:runtime-livedata",
+        "androidx.compose.ui:ui",
+        "androidx.compose.ui:ui-tooling",
+        "androidx.compose.ui:ui-viewbinding",
+        "androidx.constraintlayout:constraintlayout-compose",
+        "androidx.core:core-ktx",
+        "androidx.lifecycle:lifecycle-viewmodel-ktx",
+        "androidx.lifecycle:lifecycle-viewmodel-savedstate",
+        "androidx.lifecycle:lifecycle-livedata-ktx",
+        "androidx.lifecycle:lifecycle-process",
+        "androidx.lifecycle:lifecycle-viewmodel-compose",
+        "androidx.preference:preference-ktx",
+        "androidx.constraintlayout:constraintlayout",
+        "androidx.room:room-runtime",
+        "androidx.room:room-ktx",
+        "androidx.fragment:fragment-ktx",
+        "androidx.palette:palette",
+        "androidx.recyclerview:recyclerview",
+        "androidx.viewpager2:viewpager2",
+        "androidx.cardview:cardview",
+        "androidx.security:security-crypto",
+        "androidx.annotation:annotation",
+        "androidx.navigation:navigation-compose",
+        "androidx.navigation:navigation-fragment-ktx",
+        "androidx.navigation:navigation-fragment-compose",
+        "androidx.navigation:navigation-ui-ktx",
+        "androidx.lifecycle:lifecycle-runtime-compose",
+        "androidx.lifecycle:lifecycle-runtime-ktx",
+        "androidx.legacy:legacy-support-v4",
+        "androidx.swiperefreshlayout:swiperefreshlayout",
+        "androidx.vectordrawable:vectordrawable",
+        "androidx.browser:browser",
+        "androidx.webkit:webkit",
+        "androidx.paging:paging-runtime-ktx",
+        "androidx.paging:paging-common-ktx",
+        "androidx.paging:paging-compose",
+        "androidx.work:work-runtime",
+        "androidx.databinding:viewbinding",
+        "androidx.hilt:hilt-work",
+        "androidx.hilt:hilt-navigation-fragment",
+        "androidx.hilt:hilt-navigation-compose",
+        "androidx.core:core-splashscreen",
+        "androidx.datastore:datastore-preferences",
+        "androidx.media3:media3-exoplayer",
+        "androidx.media3:media3-ui",
+        "com.android.installreferrer:installreferrer",
+        "androidx.profileinstaller:profileinstaller"
+      ]
+    },
+    {
+      "name": "Google places",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://developer.android.com/studio/terms.html",
+      "artifacts": [
+        "com.google.android.libraries.places:places"
+      ]
+    },
+    {
+      "name": "Material Components for Android",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://developer.android.com/studio/terms.html",
+      "artifacts": [
+        "com.google.android.material:material"
+      ]
+    },
+    {
+      "name": "Google Pay Compose button",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/google-pay/compose-pay-button/blob/main/LICENSE",
+      "artifacts": [
+        "com.google.pay.button:compose-pay-button"
+      ]
+    },
+    {
+      "name": "Firebase",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://developer.android.com/studio/terms.html",
+      "artifacts": [
+        "com.google.firebase:firebase-bom",
+        "com.google.firebase:firebase-dynamic-links",
+        "com.google.firebase:firebase-messaging",
+        "com.google.firebase:firebase-analytics",
+        "com.google.firebase:firebase-perf",
+        "com.google.firebase:firebase-crashlytics-ndk"
+      ]
+    },
+    {
+      "name": "Afterpay",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright (c) 2020 Afterpay",
+      "artifacts": [
+        "com.afterpay:afterpay-android"
+      ]
+    },
+    {
+      "name": "Apollo",
+      "license": "legal/licenses/The MIT License",
+      "copyright": "Copyright (c) 2016-2020 Apollo Graph, Inc. (Formerly Meteor Development Group, Inc.)",
+      "artifacts": [
+        "com.apollographql.apollo3:apollo-runtime"
+      ]
+    },
+    {
+      "name": "Retrofit",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright 2013 Square, Inc.",
+      "artifacts": [
+        "com.squareup.retrofit2:retrofit-bom",
+        "com.squareup.retrofit2:retrofit",
+        "com.squareup.retrofit2:converter-kotlinx-serialization",
+        "com.squareup.retrofit2:converter-scalars",
+        "com.squareup.okhttp3:okhttp"
+      ]
+    },
+    {
+      "name": "Zxing",
+      "license": "legal/licenses/Apache 2.0",
+      "artifacts": [
+        "com.google.zxing:core"
+      ]
+    },
+    {
+      "name": "Glide",
+      "license": "legal/licenses/Glide",
+      "artifacts": [
+        "com.github.bumptech.glide:glide",
+        "com.github.bumptech.glide:okhttp3-integration",
+        "com.github.bumptech.glide:recyclerview-integration"
+      ]
+    },
+    {
+      "name": "Gson",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright 2008 Google Inc.",
+      "artifacts": [
+        "com.google.code.gson:gson"
+      ]
+    },
+    {
+      "name": "Lottie",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright 2018 Airbnb, Inc.",
+      "artifacts": [
+        "com.airbnb.android:lottie"
+      ]
+    },
+    {
+      "name": "Accompanist webview",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright 2020 The Android Open Source Project",
+      "artifacts": [
+        "com.google.accompanist:accompanist-webview"
+      ]
+    },
+    {
+      "name": "Auth0",
+      "license": "legal/licenses/The MIT License",
+      "copyright": "Copyright (c) 2016 Auth0",
+      "artifacts": [
+        "com.auth0.android:auth0",
+        "com.auth0.android:jwtdecode"
+      ]
+    },
+    {
+      "name": "appauth",
+      "version": "0.11.1",
+      "link": "https://github.com/openid/AppAuth-Android/blob/master/LICENSE",
+      "license": "Apache License Version 2.0",
+      "artifacts": [
+        "net.openid:appauth"
+      ]
+    },
+    {
+      "name": "AndroidSvg",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright 2013-2018 Cave Rock Software Ltd",
+      "artifacts": [
+        "com.caverock:androidsvg"
+      ]
+    },
+    {
+      "name": "Optimizely",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright 2016-2017, Optimizely, Inc. and contributors",
+      "artifacts": [
+        "com.optimizely.ab:android-sdk",
+        "com.noveogroup.android:android-logger"
+      ]
+    },
+    {
+      "name": "RootBeer",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright (C) 2015, Scott Alexander-Bown, Mat Rollings",
+      "artifacts": [
+        "com.scottyab:rootbeer-lib"
+      ]
+    },
+    {
+      "name": "Dagger",
+      "license": "legal/licenses/Apache 2.0",
+      "copyright": "Copyright 2012 The Dagger Authors",
+      "artifacts": [
+        "com.google.dagger:hilt-android"
+      ]
+    },
+    {
+      "name": "Coil3",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/coil-kt/coil",
+      "artifacts": [
+        "io.coil-kt.coil3:coil-compose",
+        "io.coil-kt.coil3:coil-gif",
+        "io.coil-kt.coil3:coil-network-okhttp",
+        "io.coil-kt.coil3:coil-svg"
+      ]
+    },
+    {
+      "name": "Javax inject",
+      "license": "legal/licenses/Apache 2.0",
+      "artifacts": [
+        "javax.inject:javax.inject"
+      ]
+    },
+    {
+      "name": "Certificate transparency for Android and JVM",
+      "license": "legal/licenses/Apache 2.0",
+      "artifacts": [
+        "com.appmattus.certificatetransparency:certificatetransparency-android"
+      ]
+    },
+    {
+      "name": "ARCore SDK for Android",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/google-ar/arcore-android-sdk/blob/master/LICENSE",
+      "transitive": true,
+      "artifacts": [
+        "com.google.ar:core"
+      ]
+    },
+    {
+      "name": "Picasso",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/square/picasso/blob/master/LICENSE.txt",
+      "transitive": true,
+      "artifacts": [
+        "com.squareup.picasso:picasso"
+      ]
+    },
+    {
+      "name": "Mixpanel-Android",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/mixpanel/mixpanel-android/blob/master/LICENSE",
+      "transitive": true,
+      "artifacts": [
+        "com.mixpanel.android:mixpanel-android"
+      ]
+    },
+    {
+      "name": "Moshi",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/square/moshi/blob/master/LICENSE.txt",
+      "transitive": true,
+      "artifacts": [
+        "com.squareup.moshi:moshi-kotlin",
+        "com.squareup.moshi:moshi-adapters",
+        "com.squareup.retrofit2:converter-moshi"
+      ]
+    },
+    {
+      "name": "Draco",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/google/draco/blob/master/LICENSE",
+      "transitive": true,
+      "artifacts": [
+        "Draco"
+      ]
+    },
+    {
+      "name": "GLM",
+      "license": "legal/licenses/The MIT License",
+      "link": "https://github.com/g-truc/glm/blob/master/copying.txt",
+      "transitive": true,
+      "artifacts": [
+        "GLM"
+      ]
+    },
+    {
+      "name": "STB",
+      "license": "legal/licenses/The MIT License",
+      "link": "https://github.com/nothings/stb/blob/master/LICENSE",
+      "transitive": true,
+      "artifacts": [
+        "STB"
+      ]
+    },
+    {
+      "name": "TinyGLTF",
+      "license": "legal/licenses/The MIT License",
+      "link": "https://github.com/syoyo/tinygltf/blob/master/LICENSE",
+      "transitive": true,
+      "artifacts": [
+        "TinyGLTF"
+      ]
+    },
+    {
+      "name": "Volk",
+      "license": "legal/licenses/The MIT License",
+      "link": "https://github.com/zeux/volk/blob/master/LICENSE.md",
+      "transitive": true,
+      "artifacts": [
+        "Volk"
+      ]
+    },
+    {
+      "name": "RapidJSON",
+      "license": "legal/licenses/The MIT License",
+      "link": "https://github.com/Tencent/rapidjson/blob/master/license.txt",
+      "transitive": true,
+      "artifacts": [
+        "RapidJSON"
+      ]
+    },
+    {
+      "name": "SPIRV-Reflect",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/KhronosGroup/SPIRV-Reflect/blob/master/LICENSE",
+      "transitive": true,
+      "artifacts": [
+        "SPIRV-Reflect"
+      ]
+    },
+    {
+      "name": "Insetter",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/chrisbanes/insetter/blob/main/LICENSE",
+      "artifacts": [
+        "dev.chrisbanes.insetter:insetter"
+      ]
+    },
+    {
+      "name": "Google Flexbox",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/google/flexbox-layout/blob/main/LICENSE",
+      "artifacts": [
+        "com.google.android.flexbox:flexbox"
+      ]
+    },
+    {
+      "name": "Telephoto Zoomable Image",
+      "license": "legal/licenses/Apache 2.0",
+      "link": "https://github.com/saket/telephoto/blob/trunk/license.txt",
+      "artifacts": [
+        "me.saket.telephoto:zoomable-image-coil"
+      ]
+    },
+    {
+      "name": "Maplibre",
+      "license": "legal/licenses/BSD 2-Clause License",
+      "copyright": "Copyright (c) 2021 MapLibre contributors\nCopyright (c) 2018-2021 MapTiler.com\nCopyright (c) 2014-2020 Mapbox",
+      "link": "https://github.com/maplibre/maplibre-native/blob/main/LICENSE.md",
+      "transitive": true,
+      "artifacts": [
+        "org.maplibre.gl:android-sdk"
+      ]
+    }
+  ]
+}

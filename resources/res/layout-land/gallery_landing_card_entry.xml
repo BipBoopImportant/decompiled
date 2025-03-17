@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp">
+    <androidx.cardview.widget.CardView android:id="@+id/entry_video_card" android:layout_width="0dp" android:layout_height="0dp" app:cardCornerRadius="@dimen/sc_round_corner_radius" app:cardElevation="0dp" app:layout_constraintDimensionRatio="H,16:9" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_percent="0.4">
+        <androidx.compose.ui.platform.ComposeView android:id="@+id/entryVideoComposableContent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:clipChildren="true" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginStart="8dp" app:cardCornerRadius="@dimen/sc_round_corner_radius" app:cardElevation="0dp" app:layout_constraintBottom_toBottomOf="@+id/entry_video_card" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/entry_video_card" app:layout_constraintTop_toTopOf="@+id/entry_video_card">
+        <LinearLayout android:orientation="vertical" android:id="@+id/entry_body_card" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="28dp" android:paddingEnd="28dp">
+            <TextView android:textSize="19sp" android:id="@+id/entry_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="textStart" style="@style/TextAppearance.Sugarcube.Interstitial.Headline"/>
+            <TextView android:id="@+id/entry_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textAlignment="textStart" style="@style/TextAppearance.Sugarcube.CardView.Body.Dark"/>
+            <com.google.android.material.button.MaterialButton android:textColor="@color/primary_button_variant_1_text_color" android:id="@+id/entry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:drawableEnd="@drawable/sc_arrow_right_16" android:backgroundTint="@color/primary_button_variant_1_background" android:drawableTint="@color/primary_button_variant_1_text_color" style="@style/Sugarcube.Button.Primary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

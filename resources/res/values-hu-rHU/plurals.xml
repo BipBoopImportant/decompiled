@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">Megjelenítjük %s javaslatot</item>
+        <item quantity="other">%s javaslatok megjelenítése</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s / %2$d csillag %3$d felhasználótól</item>
+        <item quantity="other">%1$s / %2$d csillag %3$d felhasználótól</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">A keresés %d találatot hozott</item>
+        <item quantity="other">A keresés %d találatot hozott</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d aktív kedvezmény</item>
+        <item quantity="other">%1$d aktív kedvezmény</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d/%2$d elérhető</item>
+        <item quantity="other">%1$d/%2$d elérhető</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d / %2$d nem érhető el</item>
+        <item quantity="other">%1$d / %2$d nem érhető el</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">A kiszállítás %1$d szálltmányra lesz bontva</item>
+        <item quantity="other">A kiszállítás %1$d küldeményre oszlik</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">Megtekintés: %d tétel ehhez a szállításhoz</item>
+        <item quantity="other">Megtekintés: mind a(z) %d tétel ehhez a szállításhoz</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d tétel</item>
+        <item quantity="other">%d elem</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Becsült várakozási idő: %s perc</item>
+        <item quantity="other">Becsült várakozási idő: %s perc</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d új értesítés</item>
+        <item quantity="other">%d új értesítés</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">%1$d új értesítésed van az IKEA-tól</item>
+        <item quantity="other">%1$d új értesítésed van az IKEA-tól</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d tétel</item>
+        <item quantity="other">%d tétel</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d termék</item>
+        <item quantity="other">%d termék</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">%d nap van hátra</item>
+        <item quantity="other">%d nap van hátra</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%dproduct</item>
+        <item quantity="other">%dproducts</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">%d termék megjelenítése</item>
+        <item quantity="other"> %d termék megjelenítése</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">%d termék megjelenítése</item>
+        <item quantity="other"> %d termék megjelenítése</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d terv</item>
+        <item quantity="other">%d terv</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d tétel</item>
+        <item quantity="other">%d tétel</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d perc</item>
+        <item quantity="other">%d perc</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d szoba eltávolítva</item>
+        <item quantity="other">%d szoba eltávolítva</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$d termék hozzáadható a kosárhoz</item>
+        <item quantity="other">%1$d termék hozzáadhatók a kosárhoz</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$d termék nem áll rendelkezésre</item>
+        <item quantity="other">%1$d termék nem áll rendelkezésre</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d elem a kosárba másolva</item>
+        <item quantity="other">%d termék másolva lett a kosárba</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d termék</item>
+        <item quantity="other">%d termék</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%d felnőtt</item>
+        <item quantity="other">%d felnőtt</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%d gyermek</item>
+        <item quantity="other">%d gyermek</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="one">Már csak %d hely maradt!</item>
+        <item quantity="other">Már csak %d hely maradt!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">%d további foglalkozás</item>
+        <item quantity="other">%d további foglalkozás</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">%1$d termék nem érhető el ezzel a szállítási móddal</item>
+        <item quantity="other">%1$d tétel nem érhető el ezzel a szállítási móddal</item>
+    </plurals>
+</resources>

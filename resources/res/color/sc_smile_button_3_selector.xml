@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:color="@color/smile_deactivated" android:state_activated="false"/>
+    <item android:state_selected="true" android:color="@color/smile_3_neutral"/>
+    <item android:state_selected="false" android:color="@color/smile_activated"/>
+</selector>

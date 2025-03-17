@@ -1,0 +1,21 @@
+package org.ocpsoft.prettytime.i18n;
+
+import java.util.ListResourceBundle;
+
+public class Resources_zh_HK extends ListResourceBundle {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Object[][] f146211a;
+
+    static {
+        Object obj = "前";
+        Object obj2 = "後";
+        Object obj3 = "";
+        f146211a = new Object[][]{new Object[]{"CenturyPattern", "%n %u"}, new Object[]{"CenturyFuturePrefix", ""}, new Object[]{"CenturyFutureSuffix", "後"}, new Object[]{"CenturyPastPrefix", ""}, new Object[]{"CenturyPastSuffix", "前"}, new Object[]{"CenturySingularName", "世紀"}, new Object[]{"CenturyPluralName", "世紀"}, new Object[]{"DayPattern", "%n %u"}, new Object[]{"DayFuturePrefix", ""}, new Object[]{"DayFutureSuffix", "後"}, new Object[]{"DayPastPrefix", ""}, new Object[]{"DayPastSuffix", "前"}, new Object[]{"DaySingularName", "日"}, new Object[]{"DayPluralName", "日"}, new Object[]{"DecadePattern", "%n%u"}, new Object[]{"DecadeFuturePrefix", obj3}, new Object[]{"DecadeFutureSuffix", obj2}, new Object[]{"DecadePastPrefix", obj3}, new Object[]{"DecadePastSuffix", obj}, new Object[]{"DecadeSingularName", "0 年"}, new Object[]{"DecadePluralName", "0 年"}, new Object[]{"HourPattern", "%n %u"}, new Object[]{"HourFuturePrefix", obj3}, new Object[]{"HourFutureSuffix", obj2}, new Object[]{"HourPastPrefix", obj3}, new Object[]{"HourPastSuffix", obj}, new Object[]{"HourSingularName", "小時"}, new Object[]{"HourPluralName", "小時"}, new Object[]{"JustNowPattern", "%u"}, new Object[]{"JustNowFuturePrefix", obj3}, new Object[]{"JustNowFutureSuffix", "剛剛"}, new Object[]{"JustNowPastPrefix", "片刻之前"}, new Object[]{"JustNowPastSuffix", obj3}, new Object[]{"JustNowSingularName", obj3}, new Object[]{"JustNowPluralName", obj3}, new Object[]{"MillenniumPattern", "%n %u"}, new Object[]{"MillenniumFuturePrefix", obj3}, new Object[]{"MillenniumFutureSuffix", obj2}, new Object[]{"MillenniumPastPrefix", obj3}, new Object[]{"MillenniumPastSuffix", obj}, new Object[]{"MillenniumSingularName", "千年"}, new Object[]{"MillenniumPluralName", "千年"}, new Object[]{"MillisecondPattern", "%n %u"}, new Object[]{"MillisecondFuturePrefix", obj3}, new Object[]{"MillisecondFutureSuffix", obj2}, new Object[]{"MillisecondPastPrefix", obj3}, new Object[]{"MillisecondPastSuffix", obj}, new Object[]{"MillisecondSingularName", "毫秒"}, new Object[]{"MillisecondPluralName", "毫秒"}, new Object[]{"MinutePattern", "%n %u"}, new Object[]{"MinuteFuturePrefix", obj3}, new Object[]{"MinuteFutureSuffix", obj2}, new Object[]{"MinutePastPrefix", obj3}, new Object[]{"MinutePastSuffix", obj}, new Object[]{"MinuteSingularName", "分鐘"}, new Object[]{"MinutePluralName", "分鐘"}, new Object[]{"MonthPattern", "%n %u"}, new Object[]{"MonthFuturePrefix", obj3}, new Object[]{"MonthFutureSuffix", obj2}, new Object[]{"MonthPastPrefix", obj3}, new Object[]{"MonthPastSuffix", obj}, new Object[]{"MonthSingularName", "個月"}, new Object[]{"MonthPluralName", "個月"}, new Object[]{"SecondPattern", "%n %u"}, new Object[]{"SecondFuturePrefix", obj3}, new Object[]{"SecondFutureSuffix", obj2}, new Object[]{"SecondPastPrefix", obj3}, new Object[]{"SecondPastSuffix", obj}, new Object[]{"SecondSingularName", "秒"}, new Object[]{"SecondPluralName", "秒"}, new Object[]{"WeekPattern", "%n %u"}, new Object[]{"WeekFuturePrefix", obj3}, new Object[]{"WeekFutureSuffix", obj2}, new Object[]{"WeekPastPrefix", obj3}, new Object[]{"WeekPastSuffix", obj}, new Object[]{"WeekSingularName", "星期"}, new Object[]{"WeekPluralName", "星期"}, new Object[]{"YearPattern", "%n %u"}, new Object[]{"YearFuturePrefix", obj3}, new Object[]{"YearFutureSuffix", obj2}, new Object[]{"YearPastPrefix", obj3}, new Object[]{"YearPastSuffix", obj}, new Object[]{"YearSingularName", "年"}, new Object[]{"YearPluralName", "年"}, new Object[]{"AbstractTimeUnitPattern", obj3}, new Object[]{"AbstractTimeUnitFuturePrefix", obj3}, new Object[]{"AbstractTimeUnitFutureSuffix", obj3}, new Object[]{"AbstractTimeUnitPastPrefix", obj3}, new Object[]{"AbstractTimeUnitPastSuffix", obj3}, new Object[]{"AbstractTimeUnitSingularName", obj3}, new Object[]{"AbstractTimeUnitPluralName", obj3}};
+    }
+
+    /* access modifiers changed from: protected */
+    public Object[][] getContents() {
+        return f146211a;
+    }
+}

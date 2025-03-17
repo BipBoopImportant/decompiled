@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="@dimen/data_layout_width" android:layout_height="@dimen/data_layout_height" android:foreground="?attr/selectableItemBackground" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+    <TextView android:ellipsize="end" android:id="@+id/data" android:padding="@dimen/data_content_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/ikeaTextAppearanceBodySmall"/>
+</FrameLayout>

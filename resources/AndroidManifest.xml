@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="13854" android:versionName="4.11.0" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.ingka.ikea.app" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="35"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <queries>
+        <package android:name="com.google.android.googlequicksearchbox"/>
+        <package android:name="com.google.ar.core" android:value="optional"/>
+        <package android:name="se.bankgirot.swish"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.android.vending"/>
+        <intent>
+            <action android:name="com.google.android.play.core.install.BIND_INSTALL_SERVICE"/>
+        </intent>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.samsung.android.samsungpay.gear"/>
+    </queries>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RUN_USER_INITIATED_JOBS"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.ingka.ikea.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ingka.ikea.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <application android:theme="@style/IkeaAppTheme" android:label="@string/ikea_app_name" android:icon="@mipmap/ic_launcher" android:name="com.ingka.ikea.app.IkeaApplication" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:enableOnBackInvokedCallback="false">
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_user_data" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="false"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_api_key_android"/>
+        <meta-data android:name="com.google.android.nearby.messages.API_KEY" android:value="@string/google_api_key_android"/>
+        <meta-data android:name="com.google.android.awareness.API_KEY" android:value="@string/google_api_key_android"/>
+        <activity android:name="com.ingka.ikea.app.welcomescreen.WelcomeActivity" android:exported="true" android:launchMode="singleTask" android:configChanges="keyboard|screenSize" android:allowTaskReparenting="true"/>
+        <activity android:name="com.ingka.ikea.app.BlockingMessageActivity" android:launchMode="singleTask"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.ingka.ikea.app.androidx-startup">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.ingka.ikea.app.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.ingka.ikea.checkout.impl.OnlineCheckoutActivity" android:launchMode="singleTask" android:configChanges="keyboard|screenSize"/>
+        <activity android:name="com.ingka.ikea.checkout.impl.delivery.PickupPointDetailsActivity" android:launchMode="singleTask" android:configChanges="keyboard|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:name="com.ingka.ikea.checkout.impl.confirmation.ConfirmationActivity" android:launchMode="singleTask" android:configChanges="keyboard|screenSize" android:windowSoftInputMode="adjustPan"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <activity android:theme="@style/IkeaAppTheme.FirstEntryTheme" android:label="@string/ikea_app_name" android:name="com.ingka.ikea.app.splash.FirstEntryActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="keyboard|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/IkeaAppTheme.Transparent" android:name="com.ingka.ikea.app.splash.AppLinkActivity" android:enabled="true" android:exported="true" android:taskAffinity="com.ingka.ikea.applink" android:excludeFromRecents="true" android:launchMode="singleTask" android:allowTaskReparenting="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.ikea.com"/>
+                <data android:pathPattern="/ikeaapp/.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="ptag-info.ikea.com"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="@string/dynamic_link_host"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ikea"/>
+                <data android:host="design-lab"/>
+                <data android:host="navigation"/>
+                <data android:host="pip"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="@string/link_it_host"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.auth0.android.provider.RedirectActivity" android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/session_callback_schema" android:host="@string/session_callback_domain" android:pathPrefix="/android/com.ingka.ikea.app/callback"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.ar.core" android:value="optional"/>
+        <activity android:name="com.ingka.ikea.account.impl.upgrade.UpgradeActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.ingka.ikea.account.impl.upgrade.SignupActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.ingka.ikea.account.impl.modalsettings.RedirectActivity" android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/hosted_account_callback_scheme"/>
+                <data android:host="@string/hosted_account_callback_host"/>
+                <data android:path="/deleteAccount"/>
+                <data android:path="/changePassword"/>
+                <data android:path="/changePhone"/>
+                <data android:path="/changeEmail"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.ingka.ikea.account.impl.modalsettings.HostedRedirectActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.ingka.ikea.onlinepayment.impl.presentation.PaymentOptionsActivity" android:exported="true" android:launchMode="singleTask" android:configChanges="keyboard|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:scheme="@string/CHECKOUT_SCHEME"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AciCheckoutTheme" android:name="com.oppwa.mobile.connect.checkout.dialog.CheckoutActivity" android:exported="true" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:scheme="@string/oppwa_scheme" android:host="com.ingka.ikea.app.result"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.ingka.ikea.onlinepayment.impl.presentation.AciBroadcastReceiver" android:exported="false"/>
+        <activity android:theme="@style/IkeaAppTheme.Transparent" android:name="com.ingka.ikea.app.inappfeedback.AppFeedbackFlowActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <receiver android:name="com.ingka.ikea.localnotification.impl.LocalNotificationReceiver" android:exported="false"/>
+        <service android:name="com.ingka.ikea.pushnotification.impl.PushNotificationService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.contentsquare.android.autostart" android:value="false"/>
+        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="accounts.ikea.com" android:path="/android/com.ingka.ikea.app/sso"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Sugarcube.NoActionBar" android:name="com.sugarcube.app.base.ui.capturev2.CaptureActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.Sugarcube.NoActionBar" android:name="com.sugarcube.app.base.ui.capturev2.CapturePortraitActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="screenSize" android:resizeableActivity="false"/>
+        <activity android:theme="@style/Theme.Sugarcube.NoActionBar" android:name="com.sugarcube.app.base.ui.capturev2.CaptureLandscapeActivity" android:exported="false" android:screenOrientation="landscape" android:configChanges="screenSize" android:resizeableActivity="false"/>
+        <activity android:theme="@style/Theme.Sugarcube.NoActionBar" android:name="com.sugarcube.app.base.ui.hybrid.HybridActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:resizeableActivity="false"/>
+        <activity android:theme="@style/Theme.Sugarcube.NoActionBar" android:name="com.sugarcube.app.base.ui.ultrawide.UltrawideActivity" android:exported="false" android:configChanges="screenSize" android:resizeableActivity="false"/>
+        <service android:name="com.sugarcube.app.base.upload.UploadJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.sugarcube.app.base.ShareIntentReceiver" android:exported="false"/>
+        <activity android:theme="@style/contentsquare_SettingsLayout" android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.settings.SettingsActivity"/>
+        <activity android:theme="@style/contentsquare_AppTheme.Dialog" android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.developer.DeveloperActivationActivity"/>
+        <service android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.overlay.OverlayService" android:enabled="true" android:exported="false" android:stopWithTask="false"/>
+        <activity android:theme="@style/contentsquare_AppTheme" android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.tutorial.ClientModeTutorialActivity"/>
+        <activity android:theme="@style/contentsquare_AppTheme.Dialog" android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.deactivationdialog.DeactivationActivity" android:excludeFromRecents="true"/>
+        <provider android:name="com.contentsquare.android.internal.features.initialize.AutoStart" android:exported="false" android:authorities="com.ingka.ikea.app.CSAutoStart"/>
+        <provider android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.settings.DebugLogProvider" android:exported="false" android:authorities="com.ingka.ikea.app.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/contentsquare_provider_logs"/>
+        </provider>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/PlacesAutocompleteOverlay" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="android.webkit.WebView.MetricsOptOut" android:value="true"/>
+        <activity android:theme="@style/AfterpayDialog" android:name="com.afterpay.android.view.AfterpayCheckoutActivity" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/AfterpayDialog" android:name="com.afterpay.android.view.AfterpayCheckoutV2Activity" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/AfterpayDialog" android:name="com.afterpay.android.internal.AfterpayInfoActivity" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar" android:name="net.openid.appauth.AuthorizationManagementActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.auth0.android.provider.AuthenticationActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"/>
+        <service android:name="androidx.camera.core.impl.MetadataHolderService" android:enabled="false" android:exported="false">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" android:visibleToInstantApps="true"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:name="com.google.mlkit.common.internal.MlKitInitProvider" android:exported="false" android:authorities="com.ingka.ikea.app.mlkitinitprovider" android:initOrder="99"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <service android:name="com.google.firebase.sessions.SessionLifecycleService" android:enabled="true" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.ingka.ikea.app.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <receiver android:name="com.optimizely.ab.android.datafile_handler.DatafileRescheduler" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.optimizely.ab.android.event_handler.EventRescheduler" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <activity android:name="androidx.compose.ui.tooling.PreviewActivity" android:exported="true"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.ingka.ikea.app.com.squareup.picasso"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="242040000"/>
+        <activity android:theme="@style/Theme.Material.Light.Dialog.Alert" android:name="com.google.ar.core.InstallActivity" android:exported="false" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat" android:name="com.oppwa.mobile.connect.provider.AsyncPaymentActivity" android:exported="false"/>
+        <activity android:theme="@style/Oppwa.Theme.Nfc" android:name="com.oppwa.mobile.connect.core.nfc.ui.NfcCardReaderActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/OppwaTheme.AppCompat.Translucent" android:name="com.oppwa.mobile.connect.payment.processor.cashapppay.CashAppPayProcessorActivity" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <data android:scheme="@string/oppwa_scheme" android:host="com.ingka.ikea.app.cashapppay.result"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/OppwaTheme.AppCompat.Translucent" android:name="com.oppwa.mobile.connect.payment.processor.affirm.AffirmProcessorActivity" android:exported="false" android:launchMode="singleTask"/>
+        <provider android:name="com.oppwa.mobile.connect.provider.OppwaInitProvider" android:exported="false" android:authorities="com.ingka.ikea.app.oppwa.init.provider"/>
+        <activity android:theme="@style/nsoftware.3ds.Theme" android:label=" " android:name="com.nsoftware.ipworks3ds.sdk.core.ClientTextChallengeListener"/>
+        <activity android:theme="@style/nsoftware.3ds.Theme" android:label=" " android:name="com.nsoftware.ipworks3ds.sdk.core.ClientSingleSelectorChallengeListener"/>
+        <activity android:theme="@style/nsoftware.3ds.Theme" android:label=" " android:name="com.nsoftware.ipworks3ds.sdk.core.ClientMultiSelectChallengeListener"/>
+        <activity android:theme="@style/nsoftware.3ds.Theme" android:label=" " android:name="com.nsoftware.ipworks3ds.sdk.core.ClientOutOfBandChallengeListener" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ipworks3ds" android:host="com.ingka.ikea.app.oob"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/nsoftware.3ds.Theme" android:label=" " android:name="com.nsoftware.ipworks3ds.sdk.core.ClientInformationListener"/>
+        <activity android:theme="@style/nsoftware.3ds.Theme" android:label=" " android:name="com.nsoftware.ipworks3ds.sdk.core.ClientWebChallengeListener"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

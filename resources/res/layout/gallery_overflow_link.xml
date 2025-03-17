@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CardView.Shadow">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/ikea_blue" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/overflow_link_image" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/sc_desktop_link_card_image" android:scaleType="centerCrop" android:contentDescription="@string/sc_content_description_image" app:layout_constraintDimensionRatio="H,16:9" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/overflow_link_image">
+            <TextView android:textColor="@color/white" android:id="@+id/overflow_link_eyebrow" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sc_gallery_desktop_app" style="@style/TextAppearance.Sugarcube.CardView.Header"/>
+            <TextView android:textColor="@color/white" android:id="@+id/overflow_link_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:text="@string/sc_gallery_desktop_open" style="@style/TextAppearance.Sugarcube.CardView.Title"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/overflow_link_desktop" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/sc_gallery_design_on_desktop" android:layout_weight="1" app:icon="@drawable/sc_ic_hyperlink" app:iconGravity="2" app:iconPadding="12dp" style="@style/Sugarcube.Button.Outlined.White"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/container" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="280dp">
+    <View android:id="@+id/leftArrow" android:background="@drawable/sc_tooltip_arrow_left" android:visibility="gone" android:layout_width="12dp" android:layout_height="24dp" android:elevation="8dp"/>
+    <androidx.cardview.widget.CardView android:id="@+id/textContainer" android:background="@drawable/sc_tooltip_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0dp" android:maxWidth="250dp" style="@style/CardView.Shadow.Tooltip">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/ikea_blue" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230dp" android:text="@string/sc_decorate_swap_products"/>
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/textContent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240dp" android:text="@string/sc_decorate_see_what_fits" android:singleLine="false"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View android:id="@+id/rightArrow" android:background="@drawable/sc_tooltip_arrow_right" android:visibility="gone" android:layout_width="12dp" android:layout_height="24dp" android:elevation="8dp"/>
+</LinearLayout>

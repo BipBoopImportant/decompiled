@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="140dp" android:width="200dp" android:viewportWidth="200" android:viewportHeight="140">
+    <path android:pathData="M20,30 C20,30 20,20 30,20 L30,20 170,20 C170,20 180,20 180,30 L180,30 180,110 C180,110 180,120 170,120 L170,120 30,120 C30,120 20,120 20,110 z" android:strokeColor="@color/oppwa_nfc_accent_color" android:strokeWidth="1.5"/>
+</vector>

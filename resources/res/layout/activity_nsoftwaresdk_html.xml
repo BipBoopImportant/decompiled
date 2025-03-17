@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.nsoftware.ipworks3ds.sdk.core.SDKToolbarLayout android:id="@+id/sdkToolbarView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.nsoftware.ipworks3ds.sdk.core.SDKScrollView android:id="@+id/checkoutView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.nsoftware.ipworks3ds.sdk.core.MyWebView android:id="@+id/htmlWebView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.nsoftware.ipworks3ds.sdk.core.SDKScrollView>
+</LinearLayout>

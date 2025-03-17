@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/view_background_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/categoriesSectionContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/catalogCategories" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:background="@color/card_background_tint" android:layout_width="2dp" android:layout_height="match_parent"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/catalogSubcategories" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageButton android:id="@+id/categoryCloseButton" android:padding="16dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="8dp" android:src="@drawable/sc_ic_close_small" android:scaleType="fitXY" android:contentDescription="@string/sc_content_description_button" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Sugarcube.Button.IconOnly"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/catalogCategoriesWaitSection" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="@style/TextAppearance.Sugarcube.CardView.GalleryItemTitle" android:id="@+id/catalogCategoriesWaitText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sc_catalog_fetching" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.sugarcube.app.base.ui.utils.BouncingBallView android:id="@+id/catalogCategoriesWaitAnimation" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/catalogCategoriesWaitText" app:viewType="1" gmg_startOnCreate="true"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

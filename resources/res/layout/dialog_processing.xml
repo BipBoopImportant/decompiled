@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+    <androidx.cardview.widget.CardView android:id="@+id/container" android:layout_width="250dp" android:layout_height="160dp" app:cardBackgroundColor="@color/view_background_base" app:cardCornerRadius="@dimen/sc_round_corner_radius" app:cardElevation="0dp" app:cardMaxElevation="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <FrameLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+            <com.sugarcube.app.base.ui.utils.BouncingBallView android:id="@+id/processingWaitAnimation" android:layout_width="match_parent" android:layout_height="match_parent" app:viewType="1"/>
+            <TextView android:textAppearance="@style/TextAppearance.Sugarcube.Interstitial.Title" android:textColor="@color/primary_text_darker_color" android:layout_gravity="center" android:id="@+id/statusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/sc_decorate_loading"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

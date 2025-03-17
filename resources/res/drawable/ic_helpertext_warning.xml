@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="16dp" android:width="16dp" android:viewportWidth="16" android:viewportHeight="16">
+    <path android:fillColor="@color/skapa_semantic_caution" android:pathData="M7.35,0.5 L0,14.426 0.65,15.5L15.35,15.5L16,14.426 8.65,0.5Z" android:fillType="1"/>
+    <path android:fillColor="@color/skapa_text_and_icon_5" android:pathData="M8.948,10.102L6.945,10.102L6.945,4.103h2z"/>
+    <path android:fillColor="@color/skapa_text_and_icon_5" android:pathData="m6.698,12.852c0,-0.69 0.56,-1.25 1.25,-1.25 0.69,0 1.25,0.56 1.25,1.25 0,0.69 -0.56,1.25 -1.25,1.25 -0.69,0 -1.25,-0.56 -1.25,-1.25z"/>
+</vector>

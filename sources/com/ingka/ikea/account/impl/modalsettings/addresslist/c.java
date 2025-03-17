@@ -1,0 +1,71 @@
+package com.ingka.ikea.account.impl.modalsettings.addresslist;
+
+import Yd.l;
+import android.app.Activity;
+import android.content.Context;
+import android.content.ContextWrapper;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import com.ingka.ikea.app.uicomponents.fragment.DelegateFragment;
+import fH.C17219a;
+import jH.C17410g;
+import mH.C17600c;
+import mH.C17601d;
+import mH.C17602e;
+
+abstract class c extends DelegateFragment {
+
+    /* renamed from: Y  reason: collision with root package name */
+    private ContextWrapper f69642Y;
+
+    /* renamed from: Z  reason: collision with root package name */
+    private boolean f69643Z;
+
+    /* renamed from: y0  reason: collision with root package name */
+    private boolean f69644y0 = false;
+
+    c() {
+    }
+
+    private void o0() {
+        if (this.f69642Y == null) {
+            this.f69642Y = C17410g.b(super.getContext(), this);
+            this.f69643Z = C17219a.a(super.getContext());
+        }
+    }
+
+    public Context getContext() {
+        if (super.getContext() == null && !this.f69643Z) {
+            return null;
+        }
+        o0();
+        return this.f69642Y;
+    }
+
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        o0();
+        q0();
+    }
+
+    public LayoutInflater onGetLayoutInflater(Bundle bundle) {
+        LayoutInflater onGetLayoutInflater = super.onGetLayoutInflater(bundle);
+        return onGetLayoutInflater.cloneInContext(C17410g.c(onGetLayoutInflater, this));
+    }
+
+    /* access modifiers changed from: protected */
+    public void q0() {
+        if (!this.f69644y0) {
+            this.f69644y0 = true;
+            ((l) ((C17600c) C17602e.a(this)).g0()).z1((AddressListFragment) C17602e.a(this));
+        }
+    }
+
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        ContextWrapper contextWrapper = this.f69642Y;
+        C17601d.d(contextWrapper == null || C17410g.d(contextWrapper) == activity, "onAttach called multiple times with different Context! Hilt Fragments should not be retained.", new Object[0]);
+        o0();
+        q0();
+    }
+}

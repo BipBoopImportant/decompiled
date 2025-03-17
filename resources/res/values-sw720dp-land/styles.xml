@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SkapaHeading.L">
+        <item name="android:textSize">@dimen/fontSize800</item>
+        <item name="android:letterSpacing">-0.0063</item>
+        <item name="lineHeight">@dimen/lineHeight800Short</item>
+    </style>
+    <style name="SkapaHeading.M">
+        <item name="android:textSize">@dimen/fontSize500</item>
+        <item name="android:letterSpacing">-0.0042</item>
+        <item name="lineHeight">@dimen/lineHeight500Short</item>
+    </style>
+    <style name="SkapaHeading.XL">
+        <item name="android:textSize">@dimen/fontSize1100</item>
+        <item name="android:letterSpacing">-0.0087</item>
+        <item name="lineHeight">@dimen/lineHeight1100Short</item>
+    </style>
+    <style name="SkapaHeading.XXL">
+        <item name="android:textSize">@dimen/fontSize1300</item>
+        <item name="android:letterSpacing">-0.0112</item>
+        <item name="lineHeight">@dimen/lineHeight1300Short</item>
+    </style>
+</resources>

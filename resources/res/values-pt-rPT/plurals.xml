@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">Mostrar %s sugestão</item>
+        <item quantity="other">Mostrar %s sugestões</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s de %2$d estrelas de %3$d utilizador</item>
+        <item quantity="other">%1$s de %2$d estrelas de %3$d utilizadores</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">A pesquisa resultou em %d resultado</item>
+        <item quantity="other">A pesquisa resultou em %d resultados</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d desconto ativo</item>
+        <item quantity="other">%1$ddescontos ativos</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d de %2$d está disponível</item>
+        <item quantity="other">%1$d de %2$d estão disponíveis</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d de %2$d não está disponível</item>
+        <item quantity="other">%1$d de %2$d não estão disponíveis</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">A sua entrega vai ser entregue numa %1$d entrega</item>
+        <item quantity="other">A sua encomenda vai ser dividida em %1$d entregas</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">Ver %d artigo para esta entrega</item>
+        <item quantity="other">Ver todos os %d artigos para esta entrega</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d artigo</item>
+        <item quantity="other">%d artigos</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Tempo de espera estimado: %s minuto</item>
+        <item quantity="other">Tempo de espera estimado: %s minutos</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avançar %d segundo</item>
+        <item quantity="other">Avançar %d segundos</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Retroceder %d segundo</item>
+        <item quantity="other">Retroceder %d segundos</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d nova notificação</item>
+        <item quantity="other">%d novas notificações</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">Tem %1$d nova notificação da IKEA</item>
+        <item quantity="other">Recebeu %1$d novas notificações da IKEA</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d artigo</item>
+        <item quantity="other">%d artigos</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d produto</item>
+        <item quantity="other">%d produtos</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nova notificação</item>
+        <item quantity="other">%d novas notificações</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">%d dia restante</item>
+        <item quantity="other">%d dias restantes</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%d produto</item>
+        <item quantity="other">%d produtos</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">A mostrar %d produto</item>
+        <item quantity="other">A mostrar %d produtos</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">A mostrar %d produto</item>
+        <item quantity="other">A mostrar %d produtos</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d projeto</item>
+        <item quantity="other">%d projetos</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d produto</item>
+        <item quantity="other">%d produtos</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d minutos</item>
+        <item quantity="other">%d minutos</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d divisão removida</item>
+        <item quantity="other">%d divisões removidas</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$d produto pode ser adicionado o seu cesto</item>
+        <item quantity="other">%1$d produtos podem ser adicionados ao seu cesto</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$d produto indisponível</item>
+        <item quantity="other">%1$d produtos indisponíveis</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d artigo foi copiado para o cesto</item>
+        <item quantity="other">%d artigos foram copiados para o cesto</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d produto</item>
+        <item quantity="other">%d produtos</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%d Adulto</item>
+        <item quantity="other">%d Adultos</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%d Criança</item>
+        <item quantity="other">%d Crianças</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="other">Restam apenas %d pontos!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">%d mais sessão</item>
+        <item quantity="other">%d mais sessões</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">%1$d artigo não está disponível com este método de entrega</item>
+        <item quantity="other">%1$d artigos não estão disponíveis com este método de entrega</item>
+    </plurals>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_sheet" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/bottom_sheet_behavior">
+    <LinearLayout android:orientation="vertical" android:background="@color/catalog_drawer_separator" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/designSceneButton" android:layout_marginBottom="@dimen/sc_bottom_sheet_separator_spacing_size" android:text="@string/sc_button_start_designing" android:drawablePadding="@dimen/sc_drawable_padding" app:drawableStartCompat="@drawable/ic_skapa_create_new" style="@style/ListItemTextViewStyle.BottomSheet"/>
+        <TextView android:id="@+id/getDesktopLinkButton" android:text="@string/sc_button_get_desktop_link" android:drawablePadding="@dimen/sc_drawable_padding" app:drawableStartCompat="@drawable/ic_skapa_link" style="@style/ListItemTextViewStyle.BottomSheet"/>
+        <TextView android:id="@+id/deleteSceneButton" android:layout_marginBottom="@dimen/sc_bottom_sheet_separator_spacing_size" android:text="@string/sc_button_delete" android:drawablePadding="@dimen/sc_drawable_padding" app:drawableStartCompat="@drawable/ic_skapa_trash_can" style="@style/ListItemTextViewStyle.BottomSheet"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,86 @@
+package com.google.android.gms.internal.measurement;
+
+import com.google.android.gms.internal.measurement.L4;
+
+/* renamed from: com.google.android.gms.internal.measurement.n2  reason: case insensitive filesystem */
+public final class C7364n2 extends L4<C7364n2, a> implements C7422u5 {
+    /* access modifiers changed from: private */
+    public static final C7364n2 zzc;
+    private static volatile E5<C7364n2> zzd;
+    private int zze;
+    private String zzf = "";
+    private String zzg = "";
+    private String zzh = "";
+    private int zzi;
+    private String zzj = "";
+
+    /* renamed from: com.google.android.gms.internal.measurement.n2$a */
+    public static final class a extends L4.a<C7364n2, a> implements C7422u5 {
+        private a() {
+            super(C7364n2.zzc);
+        }
+    }
+
+    static {
+        C7364n2 n2Var = new C7364n2();
+        zzc = n2Var;
+        L4.v(C7364n2.class, n2Var);
+    }
+
+    private C7364n2() {
+    }
+
+    public static C7364n2 K() {
+        return zzc;
+    }
+
+    public final String L() {
+        return this.zzg;
+    }
+
+    public final String M() {
+        return this.zzj;
+    }
+
+    public final String N() {
+        return this.zzf;
+    }
+
+    public final int m() {
+        return this.zzi;
+    }
+
+    /* access modifiers changed from: protected */
+    public final Object r(int i10, Object obj, Object obj2) {
+        switch (C7283e2.f48908a[i10 - 1]) {
+            case 1:
+                return new C7364n2();
+            case 2:
+                return new a();
+            case 3:
+                return L4.t(zzc, "\u0004\u0005\u0000\u0001\u0001\u0005\u0005\u0000\u0000\u0000\u0001ဈ\u0000\u0002ဈ\u0001\u0003ဈ\u0002\u0004င\u0003\u0005ဈ\u0004", new Object[]{"zze", "zzf", "zzg", "zzh", "zzi", "zzj"});
+            case 4:
+                return zzc;
+            case 5:
+                E5<C7364n2> e52 = zzd;
+                if (e52 == null) {
+                    synchronized (C7364n2.class) {
+                        try {
+                            e52 = zzd;
+                            if (e52 == null) {
+                                e52 = new L4.c<>(zzc);
+                                zzd = e52;
+                            }
+                        } catch (Throwable th2) {
+                            throw th2;
+                        }
+                    }
+                }
+                return e52;
+            case 6:
+                return (byte) 1;
+            default:
+                throw null;
+        }
+    }
+}

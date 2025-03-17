@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_available_suggestion">
+        <item quantity="one">%s suggestie(s)</item>
+        <item quantity="other">Toon %ssuggesties</item>
+    </plurals>
+    <plurals name="accessibility_rating">
+        <item quantity="one">%1$s van %2$d sterren van %3$d gebruiker</item>
+        <item quantity="other">%1$s van %2$d sterren van %3$d gebruikers</item>
+    </plurals>
+    <plurals name="accessibility_search_result">
+        <item quantity="one">Je zoekopdracht heeft %d resultaat</item>
+        <item quantity="other">Je zoekopdracht heeft %d resultaten</item>
+    </plurals>
+    <plurals name="cart_discount_active_discounts">
+        <item quantity="one">%1$d korting actief</item>
+        <item quantity="other">%1$d kortingen actief</item>
+    </plurals>
+    <plurals name="cart_items_partially_available">
+        <item quantity="one">%1$d van %2$d is beschikbaar</item>
+        <item quantity="other">%1$d van %2$d zijn beschikbaar</item>
+    </plurals>
+    <plurals name="cart_items_partially_not_available">
+        <item quantity="one">%1$d van %2$d is niet beschikbaar</item>
+        <item quantity="other">%1$d van %2$d zijn niet beschikbaar</item>
+    </plurals>
+    <plurals name="checkout_delivery_info_split_pickup_warning">
+        <item quantity="one">Je bezorging wordt opgesplitst in %1$d zendingen</item>
+        <item quantity="other">Uw levering zal worden gesplitst in %1$d verzendingen</item>
+    </plurals>
+    <plurals name="checkout_delivery_items_action">
+        <item quantity="one">Bekijk %d item voor deze levering</item>
+        <item quantity="other">Bekijk alle %d items voor deze levering</item>
+    </plurals>
+    <plurals name="checkout_order_summary_items">
+        <item quantity="one">%d product</item>
+        <item quantity="other">%d producten</item>
+    </plurals>
+    <plurals name="estimated_waiting_time">
+        <item quantity="one">Geschatte wachttijd: %s min</item>
+        <item quantity="other">Geschatte wachttijd: %s min</item>
+    </plurals>
+    <plurals name="inbox_new_notifications">
+        <item quantity="one">%d nieuwe melding</item>
+        <item quantity="other">%d nieuwe meldingen</item>
+    </plurals>
+    <plurals name="inbox_notification_body">
+        <item quantity="one">Je hebt %1$d nieuwe meldingen van IKEA</item>
+        <item quantity="other">Je hebt %1$d nieuwe meldingen van IKEA</item>
+    </plurals>
+    <plurals name="item_quantity">
+        <item quantity="one">%d Item</item>
+        <item quantity="other">%d Items</item>
+    </plurals>
+    <plurals name="list_header_quantity_products">
+        <item quantity="one">%d product</item>
+        <item quantity="other">%d producten</item>
+    </plurals>
+    <plurals name="offer_days_left">
+        <item quantity="one">%d dag over</item>
+        <item quantity="other">%d dagen over</item>
+    </plurals>
+    <plurals name="product_count">
+        <item quantity="one">%d product</item>
+        <item quantity="other">%d producten</item>
+    </plurals>
+    <plurals name="product_found">
+        <item quantity="one">%d product(en) </item>
+        <item quantity="other">Het tonen van %d producten</item>
+    </plurals>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">%d product(en) </item>
+        <item quantity="other">Het tonen van %d producten</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%dontwerp</item>
+        <item quantity="other">%d ontwerpen</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d product</item>
+        <item quantity="other">%d producten</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%dminuut</item>
+        <item quantity="other">%d minuten</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%dkamer verwijderd</item>
+        <item quantity="other">%d kamers verwijderd</item>
+    </plurals>
+    <plurals name="scanshop_add_products_to_bag_title">
+        <item quantity="one">%1$d product kan aan je winkelwagen worden toegevoegd</item>
+        <item quantity="other">%1$d producten kunnen aan je winkelwagen worden toegevoegd</item>
+    </plurals>
+    <plurals name="scanshop_products_unavailable_title">
+        <item quantity="one">%1$d product is niet beschikbaar</item>
+        <item quantity="other">%1$d producten zijn niet beschikbaar</item>
+    </plurals>
+    <plurals name="shopping_list_copy_items_to_cart">
+        <item quantity="one">%d product is gekopieerd naar je winkelwagen</item>
+        <item quantity="other">%d producten zijn gekopieerd naar je winkelwagen</item>
+    </plurals>
+    <plurals name="storepage_lists_quantity_total">
+        <item quantity="one">%d product</item>
+        <item quantity="other">%d producten</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_adult_plural_x">
+        <item quantity="one">%d Volwassen</item>
+        <item quantity="other">%d Volwassenen</item>
+    </plurals>
+    <plurals name="storepage_storeevents_signup_participants_children_plural_x">
+        <item quantity="one">%d Kind</item>
+        <item quantity="other">%d Kinderen</item>
+    </plurals>
+    <plurals name="storepage_storeevents_spots_left_title">
+        <item quantity="one">Nog maar %d plek beschikbaar!</item>
+        <item quantity="other">Nog maar %d plekken beschikbaar!</item>
+    </plurals>
+    <plurals name="storepage_storeevents_x_moresession">
+        <item quantity="one">%d meer sessies</item>
+        <item quantity="other">%d meer sessies</item>
+    </plurals>
+    <plurals name="unavailable_items_message">
+        <item quantity="one">%1$d item is niet beschikbaar met deze bezorgmethode</item>
+        <item quantity="other">%1$d items zijn niet beschikbaar met deze leveringsmethode</item>
+    </plurals>
+</resources>

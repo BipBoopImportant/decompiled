@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/overflow_actions_new_composition_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/overflow_actions_discard" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/sc_button_discard" android:layout_weight="1" android:layout_marginEnd="16dp" style="@style/Sugarcube.Button.Outlined"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/overflow_actions_save" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/sc_button_save" android:layout_weight="1" style="@style/Sugarcube.Button.Primary"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/overflow_actions_existing_composition_container" android:layout_width="match_parent" android:layout_height="56dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/overflow_actions_delete" android:layout_width="56dp" android:layout_height="56dp" app:icon="@drawable/sc_ic_delete" app:iconTint="@color/base_icon_tint" style="@style/Sugarcube.Button.Round.Outlined"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/overflow_actions_duplicate" android:layout_width="56dp" android:layout_height="56dp" app:icon="@drawable/sc_ic_copy" app:iconTint="@color/base_icon_tint" style="@style/Sugarcube.Button.Round.Outlined"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/overflow_actions_share" android:layout_width="56dp" android:layout_height="56dp" app:icon="@drawable/sc_ic_share" app:iconTint="@color/base_icon_tint" style="@style/Sugarcube.Button.Round.Outlined"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25"/>
+        <com.google.android.material.button.MaterialButton android:textColor="@color/primary_button_variant_1_text_color" android:ellipsize="end" android:id="@+id/overflow_actions_edit" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/sc_button_edit" android:maxLines="1" android:layout_weight="3" android:backgroundTint="@color/primary_button_variant_1_background" app:autoSizeMaxTextSize="16sp" app:autoSizeTextType="1" style="@style/Sugarcube.Button.Primary"/>
+    </LinearLayout>
+</LinearLayout>

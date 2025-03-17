@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen">
+        <item name="?0x1010586">1</item>
+        <item name="?0x1010604">false</item>
+        <item name="?0x1010605">false</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light">
+    </style>
+    <style name="BottomSheetDialogTheme">
+        <item name="android:colorBackground">@color/skapa_neutral_1</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustUnspecified|stateHidden</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:colorEdgeEffect">@color/skapa_neutral_5</item>
+        <item name="?0x101058c">false</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+    <style name="Theme.FullScreenDialog">
+        <item name="android:textColorSecondary">@color/skapa_text_and_icon_2</item>
+        <item name="android:buttonStyle">@style/PrimaryButtonDarkGray</item>
+        <item name="android:windowBackground">@color/skapa_neutral_1</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:textColor">@color/skapa_text_and_icon_1</item>
+        <item name="android:windowAnimationStyle">@style/SlideUpSlideDown</item>
+        <item name="android:textAppearanceButton">@style/TextButton</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustUnspecified|stateHidden</item>
+        <item name="android:actionBarStyle">@style/ThemeOverlay.MaterialComponents.ActionBar</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="?0x101058c">false</item>
+        <item name="actionBarStyle">@style/ThemeOverlay.MaterialComponents.ActionBar</item>
+        <item name="actionButtonStyle">@style/ActionButton</item>
+        <item name="checkboxStyle">@style/CheckboxEmphasisedStyle</item>
+        <item name="collapseToolbarActionColor">@color/skapa_text_and_icon_1</item>
+        <item name="colorAccent">@color/skapa_neutral_7</item>
+        <item name="colorPrimary">@color/skapa_neutral_1</item>
+        <item name="colorPrimaryDark">@color/skapa_static_ikea_brand_blue</item>
+        <item name="ikeaBadgeArticleNumberAisleLocation">@style/ArticleAisleLocationTextStyle</item>
+        <item name="ikeaTextAppearanceBadge">@style/Badge</item>
+        <item name="ikeaTextAppearanceBadgeBold">@style/Badge.Bold</item>
+        <item name="ikeaTextAppearanceBodyLarge">@style/BodyLarge</item>
+        <item name="ikeaTextAppearanceBodyLargeBold">@style/BodyLarge.Bold</item>
+        <item name="ikeaTextAppearanceBodyMedium">@style/BodyMedium</item>
+        <item name="ikeaTextAppearanceBodyMediumBold">@style/BodyMedium.Bold</item>
+        <item name="ikeaTextAppearanceBodyMediumItalic">@style/BodyMedium.Italic</item>
+        <item name="ikeaTextAppearanceBodySmall">@style/BodySmall</item>
+        <item name="ikeaTextAppearanceBodySmallBold">@style/BodySmall.Bold</item>
+        <item name="ikeaTextAppearanceBodySmallItalic">@style/BodySmall.Italic</item>
+        <item name="ikeaTextAppearanceH1">@style/H1</item>
+        <item name="ikeaTextAppearanceH2">@style/H2</item>
+        <item name="ikeaTextAppearanceH3">@style/H3</item>
+        <item name="ikeaTextAppearanceH4">@style/H4</item>
+        <item name="ikeaTextAppearanceH5">@style/H5</item>
+        <item name="ikeaTextAppearanceH6">@style/H6</item>
+        <item name="ikeaTextAppearanceH6ProductName">@style/H6ProductName</item>
+        <item name="ikeaTextAppearanceH7">@style/H7</item>
+        <item name="secondaryButtonStyle">@style/SecondaryButtonGrayOutline</item>
+    </style>
+</resources>

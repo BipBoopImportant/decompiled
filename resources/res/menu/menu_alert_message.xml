@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_skapa_warning_triangle" android:id="@+id/menu_item_alert" android:orderInCategory="0" android:title="@string/alert_message_menu_title" app:showAsAction="always"/>
+</menu>

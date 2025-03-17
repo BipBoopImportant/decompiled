@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.sugarcube.app.base.ui.utils.BouncingBallView android:id="@+id/loading_indicator" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="84dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:viewType="1" gmg_startOnCreate="true"/>
+</LinearLayout>

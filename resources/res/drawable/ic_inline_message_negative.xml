@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/skapa_semantic_negative" android:pathData="M20 12c0 4.4183-3.5817 8-8 8-1.8487 0-3.551-.6271-4.9056-1.6801L18.3199 7.0944C19.3729 8.449 20 10.1513 20 12zM5.6801 16.9056 16.9056 5.6801C15.551 4.6271 13.8487 4 12 4c-4.4183 0-8 3.5817-8 8 0 1.8487.627 3.551 1.6801 4.9056zM22 12c0 5.5228-4.4772 10-10 10-5.5229 0-10-4.4772-10-10C2 6.4771 6.4771 2 12 2c5.5228 0 10 4.4771 10 10z" android:fillType="1"/>
+</vector>

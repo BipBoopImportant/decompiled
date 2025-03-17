@@ -1,0 +1,11 @@
+package com.sugarcube.app.base.ui.gallery.share;
+
+import com.sugarcube.core.network.models.Composition;
+import dI.C17164e;
+import java.util.UUID;
+import kotlin.Metadata;
+
+@Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001J\u001a\u0010\u0005\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0003\u001a\u00020\u0002H¦@¢\u0006\u0004\b\u0005\u0010\u0006¨\u0006\u0007"}, d2 = {"Lcom/sugarcube/app/base/ui/gallery/share/CloneDesignUseCase;", "", "Ljava/util/UUID;", "compositionUuid", "Lcom/sugarcube/core/network/models/Composition;", "invoke", "(Ljava/util/UUID;LdI/e;)Ljava/lang/Object;", "base_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+public interface CloneDesignUseCase {
+    Object invoke(UUID uuid, C17164e<? super Composition> eVar);
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textColor="@color/skapa_text_and_icon_2" android:gravity="center" android:id="@+id/title" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/auth_default_list_item_height" style="?attr/ikeaTextAppearanceBodySmall"/>

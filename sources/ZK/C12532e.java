@@ -1,0 +1,170 @@
+package zk;
+
+import XH.C16807N;
+import YH.X;
+import androidx.navigation.fragment.FragmentNavigator;
+import com.ingka.ikea.app.shoppinglist.ShoppingListsHostFragment;
+import com.ingka.ikea.app.shoppinglist.navigation.ShoppingListsRoutes$ShoppingListHost;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.jvm.internal.C17542s;
+import kotlin.jvm.internal.C17544u;
+import kotlin.jvm.internal.P;
+import nI.C17642l;
+import uI.C18055d;
+import uI.C18068q;
+import x4.F;
+import x4.s;
+import x4.y;
+
+@Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\u001a'\u0010\u0004\u001a\u00020\u0002*\u00020\u00002\u0014\b\u0002\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0000\u0012\u0004\u0012\u00020\u00020\u0001¢\u0006\u0004\b\u0004\u0010\u0005\u001a\u0013\u0010\u0006\u001a\u00020\u0002*\u00020\u0000H\u0002¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Lx4/y;", "Lkotlin/Function1;", "LXH/N;", "addDestinations", "c", "(Lx4/y;LnI/l;)V", "b", "(Lx4/y;)V", "shoppinglist-implementation_release"}, k = 2, mv = {2, 1, 0}, xi = 48)
+/* renamed from: zk.e  reason: case insensitive filesystem */
+public final class C12532e {
+
+    @Metadata(d1 = {"\u0000\u0018\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0006\u001a\u00020\u0005\"\n\b\u0000\u0010\u0001\u0018\u0001*\u00020\u0000\"\n\b\u0001\u0010\u0003 \u0001*\u00020\u0002*\u00020\u0004H\n¢\u0006\u0004\b\u0006\u0010\u0007"}, d2 = {"", "T", "Lx4/v;", "D", "Lx4/s;", "LXH/N;", "a", "(Lx4/s;)V"}, k = 3, mv = {2, 1, 0})
+    /* renamed from: zk.e$a */
+    public static final class a extends C17544u implements C17642l<s, C16807N> {
+
+        /* renamed from: c  reason: collision with root package name */
+        public static final a f107413c = new a();
+
+        public a() {
+            super(1);
+        }
+
+        public final void a(s sVar) {
+            C17542s.j(sVar, "$this$deepLink");
+        }
+
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((s) obj);
+            return C16807N.f139792a;
+        }
+    }
+
+    @Metadata(d1 = {"\u0000\u0018\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0006\u001a\u00020\u0005\"\n\b\u0000\u0010\u0001\u0018\u0001*\u00020\u0000\"\n\b\u0001\u0010\u0003 \u0001*\u00020\u0002*\u00020\u0004H\n¢\u0006\u0004\b\u0006\u0010\u0007"}, d2 = {"", "T", "Lx4/v;", "D", "Lx4/s;", "LXH/N;", "a", "(Lx4/s;)V"}, k = 3, mv = {2, 1, 0})
+    /* renamed from: zk.e$b */
+    public static final class b extends C17544u implements C17642l<s, C16807N> {
+
+        /* renamed from: c  reason: collision with root package name */
+        public static final b f107414c = new b();
+
+        public b() {
+            super(1);
+        }
+
+        public final void a(s sVar) {
+            C17542s.j(sVar, "$this$deepLink");
+        }
+
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((s) obj);
+            return C16807N.f139792a;
+        }
+    }
+
+    @Metadata(d1 = {"\u0000\u0018\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0006\u001a\u00020\u0005\"\n\b\u0000\u0010\u0001\u0018\u0001*\u00020\u0000\"\n\b\u0001\u0010\u0003 \u0001*\u00020\u0002*\u00020\u0004H\n¢\u0006\u0004\b\u0006\u0010\u0007"}, d2 = {"", "T", "Lx4/v;", "D", "Lx4/s;", "LXH/N;", "a", "(Lx4/s;)V"}, k = 3, mv = {2, 1, 0})
+    /* renamed from: zk.e$c */
+    public static final class c extends C17544u implements C17642l<s, C16807N> {
+
+        /* renamed from: c  reason: collision with root package name */
+        public static final c f107415c = new c();
+
+        public c() {
+            super(1);
+        }
+
+        public final void a(s sVar) {
+            C17542s.j(sVar, "$this$deepLink");
+        }
+
+        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+            a((s) obj);
+            return C16807N.f139792a;
+        }
+    }
+
+    private static final void b(y yVar) {
+        Class<ShoppingListsRoutes$ShoppingListHost> cls = ShoppingListsRoutes$ShoppingListHost.class;
+        androidx.navigation.fragment.c cVar = new androidx.navigation.fragment.c((FragmentNavigator) yVar.l().d(FragmentNavigator.class), P.b(cls), X.j(), P.b(ShoppingListsHostFragment.class));
+        cVar.e("ikea://navigation/shoppingLists/myLists", P.b(cls), a.f107413c);
+        cVar.e("ikea://navigation/shoppingLists/details", P.b(cls), b.f107414c);
+        yVar.k(cVar);
+    }
+
+    public static final void c(y yVar, C17642l<? super y, C16807N> lVar) {
+        C17542s.j(yVar, "<this>");
+        C17542s.j(lVar, "addDestinations");
+        Class<p> cls = p.class;
+        y yVar2 = new y(yVar.l(), (C18055d<?>) P.b(ShoppingListsRoutes$ShoppingListHost.class), (C18055d<?>) P.b(cls), (Map<C18068q, F<?>>) X.j());
+        yVar2.e("ikea://navigation/shoppingLists", P.b(cls), c.f107415c);
+        b(yVar2);
+        lVar.invoke(yVar2);
+        yVar.k(yVar2);
+    }
+
+    public static /* synthetic */ void d(y yVar, C17642l lVar, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            new C12531d
+            /*  JADX ERROR: Method code generation error
+                jadx.core.utils.exceptions.CodegenException: Error generate insn: 0x0006: CONSTRUCTOR  (r1v2 ? I:zk.d) =  call: zk.d.<init>():void type: CONSTRUCTOR in method: zk.e.d(x4.y, nI.l, int, java.lang.Object):void, dex: classes4.dex
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:256)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:221)
+                	at jadx.core.codegen.RegionGen.makeSimpleBlock(RegionGen.java:109)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:55)
+                	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:92)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:58)
+                	at jadx.core.codegen.RegionGen.makeRegionIndent(RegionGen.java:98)
+                	at jadx.core.codegen.RegionGen.makeIf(RegionGen.java:142)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:62)
+                	at jadx.core.codegen.RegionGen.makeSimpleRegion(RegionGen.java:92)
+                	at jadx.core.codegen.RegionGen.makeRegion(RegionGen.java:58)
+                	at jadx.core.codegen.MethodGen.addRegionInsns(MethodGen.java:211)
+                	at jadx.core.codegen.MethodGen.addInstructions(MethodGen.java:204)
+                	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:318)
+                	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:271)
+                	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$2(ClassGen.java:240)
+                	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+                	at java.util.ArrayList.forEach(ArrayList.java:1259)
+                	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+                	at java.util.stream.Sink$ChainedReference.end(Sink.java:258)
+                	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483)
+                	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+                	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+                	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+                	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+                	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485)
+                	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:236)
+                	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:227)
+                	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:112)
+                	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:78)
+                	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:44)
+                	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:33)
+                	at jadx.core.codegen.CodeGen.generate(CodeGen.java:21)
+                	at jadx.core.ProcessClass.generateCode(ProcessClass.java:61)
+                	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:273)
+                Caused by: jadx.core.utils.exceptions.JadxRuntimeException: Code variable not set in r1v2 ?
+                	at jadx.core.dex.instructions.args.SSAVar.getCodeVar(SSAVar.java:189)
+                	at jadx.core.codegen.InsnGen.makeConstructor(InsnGen.java:620)
+                	at jadx.core.codegen.InsnGen.makeInsnBody(InsnGen.java:364)
+                	at jadx.core.codegen.InsnGen.makeInsn(InsnGen.java:250)
+                	... 34 more
+                */
+            /*
+                r2 = r2 & 1
+                if (r2 == 0) goto L_0x0009
+                zk.d r1 = new zk.d
+                r1.<init>()
+            L_0x0009:
+                c(r0, r1)
+                return
+            */
+            throw new UnsupportedOperationException("Method not decompiled: zk.C12532e.d(x4.y, nI.l, int, java.lang.Object):void");
+        }
+
+        /* access modifiers changed from: private */
+        public static final C16807N e(y yVar) {
+            C17542s.j(yVar, "<this>");
+            return C16807N.f139792a;
+        }
+    }

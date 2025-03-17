@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="sc_catalog_num_products">
+        <item quantity="one">Showing %d product</item>
+        <item quantity="other">Showing %d products</item>
+    </plurals>
+    <plurals name="sc_gallery_num_designs">
+        <item quantity="one">%d design</item>
+        <item quantity="other">%d designs</item>
+    </plurals>
+    <plurals name="sc_gallery_num_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="sc_gallery_num_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="sc_gallery_num_rooms_removed">
+        <item quantity="one">%d room removed</item>
+        <item quantity="other">%d rooms removed</item>
+    </plurals>
+</resources>

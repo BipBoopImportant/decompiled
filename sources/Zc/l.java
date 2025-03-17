@@ -1,0 +1,13 @@
+package Zc;
+
+public enum l {
+    UNKNOWN,
+    BASE,
+    TRANSLATE,
+    ENTITY_EXTRACTION,
+    CUSTOM,
+    DIGITAL_INK,
+    DIGITAL_INK_SEGMENTATION,
+    TOXICITY_DETECTION,
+    IMAGE_CAPTIONING
+}

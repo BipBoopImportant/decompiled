@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/textContainer" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/buttonIcon" android:layout_width="24dp" android:layout_height="24dp" android:contentDescription="@null" android:layout_marginEnd="4dp" app:tint="@drawable/loading_button_text_icon_color"/>
+    <TextView android:textColor="@drawable/loading_button_text_icon_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/buttonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:importantForAccessibility="no" style="?attr/ikeaTextAppearanceBodyMediumBold"/>
+</LinearLayout>

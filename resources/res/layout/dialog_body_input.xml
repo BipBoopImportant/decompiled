@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/card_background_base" android:paddingTop="8dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?attr/dialogPreferredPadding" android:paddingEnd="?attr/dialogPreferredPadding">
+    <TextView android:id="@+id/dialog_body_input_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" style="@style/TextAppearance.Sugarcube.CardView.Body.Dark"/>
+    <EditText android:id="@+id/dialog_body_input_edittext" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/sc_decorate_untitled_design" android:lines="1" android:inputType="text" android:imeOptions="actionUnspecified|actionGo|actionSend|actionDone|flagNoFullscreen" style="@style/TextAppearance.Sugarcube.CardView.Body.Dark"/>
+</LinearLayout>
