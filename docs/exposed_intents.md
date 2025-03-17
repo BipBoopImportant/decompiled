@@ -36,4 +36,13 @@ This document lists all intents that external applications can use to interact w
 - Extra: `AFTERPAY_SHOULD_LOAD_REDIRECT_URLS` (Boolean)
 - Description: Used for Afterpay payment flow integration
 
+## Barcode Integration
+
+### Send Barcode
+- Action: `com.example.intent.action.SEND_BARCODE`
+- Extras:
+  - `barcode` (String): The barcode data to be added to the cart.
+  - `quantity` (int): The quantity of the item to be added to the cart.
+- Description: Used to send barcode data to the app. The app will add the item with the specified barcode and quantity to the cart.
+
 Note: Some intents may require specific permissions or authentication to work properly. Always refer to the official documentation for the most up-to-date integration guidelines.
